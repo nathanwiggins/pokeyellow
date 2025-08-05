@@ -1,6 +1,11 @@
 KindleRoad_Script:
-	jp EnableAutoTextBoxDrawing
+	call EnableAutoTextBoxDrawing
+	ret
 
 KindleRoad_TextPointers:
+	def_text_pointers
+	dw_const KindleRoadSignText, TEXT_KINDLEROAD_SIGN
 
-	text_end ; unused
+KindleRoadSignText:
+	text_far _KindleRoadSignText
+	text_end
