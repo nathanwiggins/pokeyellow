@@ -4,6 +4,7 @@ KindleRoad_Object:
 	def_warp_events
 
 	def_bg_events
+	bg_event 7, 17, TEXT_KINDLEROAD_SIGN
 
 	def_object_events
 
