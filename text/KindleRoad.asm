@@ -1,4 +1,4 @@
 _KindleRoadSignText::
 	text "MT.EMBER"
-	line "Entrance"
+	line "Mountain Entrance"
 	done
