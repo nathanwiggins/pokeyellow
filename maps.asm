@@ -1255,3 +1255,8 @@ INCLUDE "scripts/BillsHouse_2.asm"
 INCLUDE "scripts/ViridianForest_2.asm"
 INCLUDE "scripts/SSAnne2FRooms_2.asm"
 INCLUDE "scripts/SilphCo11F_2.asm"
+
+INCLUDE "data/maps/headers/KindleRoad.asm"
+INCLUDE "scripts/KindleRoad.asm"
+INCLUDE "data/maps/objects/KindleRoad.asm"
+KindleRoad_Blocks: INCBIN "maps/KindleRoad.blk"
