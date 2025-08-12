@@ -1260,3 +1260,8 @@ INCLUDE "data/maps/headers/KindleRoad.asm"
 INCLUDE "scripts/KindleRoad.asm"
 INCLUDE "data/maps/objects/KindleRoad.asm"
 KindleRoad_Blocks: INCBIN "maps/KindleRoad.blk"
+
+INCLUDE "data/maps/headers/MtEmber1F.asm"
+INCLUDE "scripts/MtEmber1F.asm"
+INCLUDE "data/maps/objects/MtEmber1F.asm"
+MtEmber1F_Blocks: INCBIN "maps/MtEmber1F.blk"
