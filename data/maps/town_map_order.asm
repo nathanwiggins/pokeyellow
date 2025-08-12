@@ -47,4 +47,5 @@ TownMapOrder:
 	db INDIGO_PLATEAU
 	db POWER_PLANT
 	db KINDLE_ROAD
+	db MT_EMBER_1F
 TownMapOrderEnd:
