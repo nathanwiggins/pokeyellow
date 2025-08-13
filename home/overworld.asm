@@ -469,7 +469,6 @@ WarpFound2::
 	ld [wCurMap], a
 	cp ROCK_TUNNEL_1F
 	jr nz, .notRockTunnel
-.needsFlash
 	ld a, $06
 	ld [wMapPalOffset], a
 	call GBFadeOutToBlack
