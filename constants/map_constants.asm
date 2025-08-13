@@ -130,7 +130,7 @@ DEF FIRST_INDOOR_MAP EQU const_value
 	map_const VICTORY_ROAD_1F,               10,  9 ; $6C
 	map_const MT_EMBER_1F,                    6,  8 ; $6D
 	map_const MT_EMBER_2F,                   20, 20 ; $6E
-	map_const UNUSED_MAP_6F,                  0,  0 ; $6F
+	map_const MT_EMBER_3F,                   8,  10 ; $6F
 	map_const UNUSED_MAP_70,                  0,  0 ; $70
 	map_const LANCES_ROOM,                   13, 13 ; $71
 	map_const UNUSED_MAP_72,                  0,  0 ; $72

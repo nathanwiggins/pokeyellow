@@ -10,7 +10,8 @@ MtEmber2F_Object:
 	db $3 ; border block
 
 	def_warp_events
-	warp_event 7, 33, MT_EMBER_1F, 3
+	warp_event  7, 33, MT_EMBER_1F, 3
+	warp_event 23, 13, MT_EMBER_3F, 1
 
 	def_bg_events
 
