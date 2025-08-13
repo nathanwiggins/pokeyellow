@@ -78,7 +78,7 @@ InternalMapEntries:
 	internal_map SS_ANNE_B1F_ROOMS,              9, 10, SSAnneName
 	internal_map KINDLE_ROAD,		     		 1, 13, KindleRoadName
 	internal_map VICTORY_ROAD_1F,                0,  4, VictoryRoadName
-	internal_map MT_EMBER_1F,					 1, 12, MtEmberName
+	internal_map MT_EMBER_2F,					 1, 12, MtEmberName
 	internal_map HALL_OF_FAME,                   0,  2, PokemonLeagueName
 	internal_map UNDERGROUND_PATH_NORTH_SOUTH,  10,  5, UndergroundPathName
 	internal_map CHAMPIONS_ROOM,                 0,  2, PokemonLeagueName

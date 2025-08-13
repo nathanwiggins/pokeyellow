@@ -2261,7 +2261,7 @@ wBrunosRoomCurScript:: db
 wAgathasRoomCurScript:: db
 wCeruleanCaveB1FCurScript:: db
 wVictoryRoad1FCurScript:: db
-	ds 1
+wMtEmber2FCurScript:: db
 wLancesRoomCurScript:: db
 	ds 4
 wSilphCo10FCurScript:: db
@@ -2514,7 +2514,7 @@ wBGPPalsBuffer:: ds NUM_ACTIVE_PALS * PAL_SIZE
 SECTION "Stack", WRAM0
 
 ; the stack grows downward
-	ds $eb - 1
+	ds $ea - 1
 wStack:: db
 
 ENDSECTION

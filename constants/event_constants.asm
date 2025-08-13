@@ -790,6 +790,13 @@ DEF INDIGO_PLATEAU_EVENTS_END EQU const_value - 1
 	const_skip 8
 	const EVENT_BEAT_ARTICUNO
 
+; Mt. Ember events
+    const_next $A00
+	const_skip 1
+    const EVENT_BEAT_MT_EMBER_2F_TRAINER_0
+    const EVENT_BEAT_MT_EMBER_2F_TRAINER_1
+    const EVENT_BEAT_MT_EMBER_2F_TRAINER_2
+
 ; End of events
-	const_next $A00
+	const_next $A04
 DEF NUM_EVENTS EQU const_value

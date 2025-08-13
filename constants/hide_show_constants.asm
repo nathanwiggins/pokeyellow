@@ -245,4 +245,7 @@ DEF SHOW EQU $15
 	const HS_DAISY_SITTING_COPY            ; EC
 	const HS_DAISY_WALKING_COPY            ; ED
 	const HS_TOWN_MAP_COPY                 ; EE
+	const HS_MT_EMBER_2F_FIRE_STONE        ; EF
+    const HS_MT_EMBER_2F_MAX_REVIVE        ; F0
+    const HS_MT_EMBER_2F_TM43              ; F1
 DEF NUM_HS_OBJECTS EQU const_value

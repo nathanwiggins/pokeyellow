@@ -35,8 +35,8 @@ IF DEF(_DEBUG)
 
 	call SetDebugNewGameParty
 
-	; Pikachu gets Surf.
-	ld a, SURF
+	; Pikachu gets Flash.
+	ld a, FLASH
 	ld hl, wPartyMon4Moves + 2
 	ld [hl], a
 

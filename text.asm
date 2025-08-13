@@ -253,6 +253,7 @@ INCLUDE "text/FuchsiaCity.asm"
 INCLUDE "text/CinnabarIsland.asm"
 INCLUDE "text/SaffronCity.asm"
 INCLUDE "text/KindleRoad.asm"
+INCLUDE "text/MtEmber2F.asm"
 
 INCLUDE "data/text/text_9.asm"
 

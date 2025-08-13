@@ -1265,3 +1265,8 @@ INCLUDE "data/maps/headers/MtEmber1F.asm"
 INCLUDE "scripts/MtEmber1F.asm"
 INCLUDE "data/maps/objects/MtEmber1F.asm"
 MtEmber1F_Blocks: INCBIN "maps/MtEmber1F.blk"
+
+INCLUDE "data/maps/headers/MtEmber2F.asm"
+INCLUDE "scripts/MtEmber2F.asm"
+INCLUDE "data/maps/objects/MtEmber2F.asm"
+MtEmber2F_Blocks: INCBIN "maps/MtEmber2F.blk"
