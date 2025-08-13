@@ -12,7 +12,6 @@ HiddenItemCoords:
 	hidden_item SAFARI_ZONE_WEST,               6,   5
 	hidden_item CERULEAN_CAVE_2F,              16,  13
 	hidden_item CERULEAN_CAVE_B1F,              8,  14
-	hidden_item UNUSED_MAP_6F,                 14,  11
 	hidden_item SEAFOAM_ISLANDS_B2F,           15,  15
 	hidden_item SEAFOAM_ISLANDS_B3F,            9,  16
 	hidden_item SEAFOAM_ISLANDS_B4F,           25,  17
