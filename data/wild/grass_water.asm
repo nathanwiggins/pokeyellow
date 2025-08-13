@@ -111,7 +111,7 @@ WildDataPointers:
 	dw VictoryRoad1FWildMons
 	dw MtEmber1FWildMons
 	dw MtEmber2FWildMons
-	dw NothingWildMons
+	dw MtEmber3FWildMons
 	dw NothingWildMons
 	dw NothingWildMons
 	dw NothingWildMons
@@ -326,3 +326,4 @@ INCLUDE "data/wild/maps/DiglettsCave.asm"
 INCLUDE "data/wild/maps/KindleRoad.asm"
 INCLUDE "data/wild/maps/MtEmber1F.asm"
 INCLUDE "data/wild/maps/MtEmber2F.asm"
+INCLUDE "data/wild/maps/MtEmber3F.asm"
