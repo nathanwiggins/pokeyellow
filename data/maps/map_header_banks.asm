@@ -111,7 +111,7 @@ MapHeaderBanks::
 	db $1D ; UNUSED_MAP_6B
 	db BANK(VictoryRoad1F_h)
 	db BANK(MtEmber1F_h)
-	db $1D ; UNUSED_MAP_6E
+	db BANK(MtEmber2F_h)
 	db $1D ; UNUSED_MAP_6F
 	db $1D ; UNUSED_MAP_70
 	db BANK(LancesRoom_h)
