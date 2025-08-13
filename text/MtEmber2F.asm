@@ -35,8 +35,8 @@ _MtEmber2FBattleText3::
         done
 
 _MtEmber2FEndBattleText3::
-        text "No way!"
-        line "How?!"
+        text "No"
+        line "way! How?!"
         prompt
 
 _MtEmber2FAfterBattleText3::
