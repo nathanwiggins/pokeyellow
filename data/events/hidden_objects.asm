@@ -8,7 +8,6 @@ HiddenObjectMaps:
 	dbw SAFARI_ZONE_WEST,             SafariZoneWestHiddenObjects
 	dbw CERULEAN_CAVE_2F,             CeruleanCave2HiddenObjects
 	dbw CERULEAN_CAVE_B1F,            CeruleanCave3HiddenObjects
-	dbw UNUSED_MAP_6F,                UnusedMap6FHiddenObjects
 	dbw SEAFOAM_ISLANDS_B2F,          SeafoamIslands3HiddenObjects
 	dbw SEAFOAM_ISLANDS_B3F,          SeafoamIslands4HiddenObjects
 	dbw SEAFOAM_ISLANDS_B4F,          SeafoamIslands5HiddenObjects
@@ -138,10 +137,6 @@ CeruleanCave2HiddenObjects:
 
 CeruleanCave3HiddenObjects:
 	hidden_object  8, 14, PP_UP, HiddenItems
-	db -1 ; end
-
-UnusedMap6FHiddenObjects:
-	hidden_object 14, 11, MAX_ELIXER, HiddenItems
 	db -1 ; end
 
 SeafoamIslands3HiddenObjects:
