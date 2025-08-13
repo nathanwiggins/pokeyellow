@@ -111,7 +111,7 @@ MapHeaderPointers::
 	dw LancesRoom_h ; UNUSED_MAP_6B
 	dw VictoryRoad1F_h
 	dw MtEmber1F_h
-	dw LancesRoom_h ; UNUSED_MAP_6E
+	dw MtEmber2F_h
 	dw LancesRoom_h ; UNUSED_MAP_6F
 	dw LancesRoom_h ; UNUSED_MAP_70
 	dw LancesRoom_h
