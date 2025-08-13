@@ -18,7 +18,7 @@ MtEmber3F_TextPointers:
         dw_const MtEmber3FMoltresText, TEXT_MTEMBER3F_MOLTRES
 
 MtEmber3FTrainerHeaders:
-        def_trainers
+        def_trainers 6
 MtEmber3FMoltresTrainerHeader:
         trainer EVENT_BEAT_MOLTRES, 0, MtEmber3FMoltresBattleText, MtEmber3FMoltresBattleText, MtEmber3FMoltresBattleText
         db -1 ; end
