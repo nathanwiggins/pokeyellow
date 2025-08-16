@@ -2263,8 +2263,9 @@ wCeruleanCaveB1FCurScript:: db
 wVictoryRoad1FCurScript:: db
 wMtEmber2FCurScript:: db
 wLancesRoomCurScript:: db
-wMtEmber3FCurScript:: db	
-	ds 3
+wMtEmber3FCurScript:: db
+wWildMeadowCurScript:: db
+	ds 2
 wSilphCo10FCurScript:: db
 wSilphCo11FCurScript:: db
 	ds 1
