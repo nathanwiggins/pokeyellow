@@ -1275,3 +1275,8 @@ INCLUDE "data/maps/headers/MtEmber3F.asm"
 INCLUDE "scripts/MtEmber3F.asm"
 INCLUDE "data/maps/objects/MtEmber3F.asm"
 MtEmber3F_Blocks: INCBIN "maps/MtEmber3F.blk"
+
+INCLUDE "data/maps/headers/WildMeadow.asm"
+INCLUDE "scripts/WildMeadow.asm"
+INCLUDE "data/maps/objects/WildMeadow.asm"
+WildMeadow_Blocks: INCBIN "maps/WildMeadow.blk"

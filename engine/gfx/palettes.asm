@@ -153,6 +153,8 @@ SetPal_Overworld:
 	ld a, [wCurMap]
 	cp KINDLE_ROAD
 	jr z, .townOrRoute
+	cp WILD_MEADOW
+	jr z, .townOrRoute
 	cp FIRST_INDOOR_MAP
 	jr c, .townOrRoute
 	cp CERULEAN_CAVE_2F

@@ -14,6 +14,7 @@ CeruleanCave2F_Object:
 	warp_event  9,  1, CERULEAN_CAVE_1F, 6
 	warp_event  1,  3, CERULEAN_CAVE_1F, 7
 	warp_event  3, 11, CERULEAN_CAVE_1F, 8
+	warp_event  19, 13, WILD_MEADOW, 1
 
 	def_bg_events
 

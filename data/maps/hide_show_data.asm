@@ -117,7 +117,7 @@ MapHSPointers:
 	dw MtEmber3FHS
 	dw NoHS
 	dw NoHS
-	dw NoHS
+	dw WildMeadowHS
 	dw NoHS
 	dw NoHS
 	dw NoHS
@@ -583,5 +583,9 @@ MtEmber2FHS:
     db MT_EMBER_2F, MTEMBER2F_TM43, SHOW
 MtEmber3FHS:
 	db MT_EMBER_3F, MTEMBER3F_MOLTRES, SHOW
+WildMeadowHS:
+	db WILD_MEADOW, WILD_MEADOW_MASTER_BALL, SHOW
+	db WILD_MEADOW, WILD_MEADOW_NUGGET, SHOW
+	db WILD_MEADOW, WILD_MEADOW_TM15, SHOW
     db $FF, $01, SHOW ; end
     assert_table_length NUM_HS_OBJECTS + 1

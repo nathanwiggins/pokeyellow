@@ -248,4 +248,7 @@ DEF SHOW EQU $15
 	const HS_MT_EMBER_2F_FIRE_STONE        ; EF
     const HS_MT_EMBER_2F_MAX_REVIVE        ; F0
     const HS_MT_EMBER_2F_TM43              ; F1
+	const HS_WILD_MEADOW_MASTER_BALL	   ; F2
+	const HS_WILD_MEADOW_NUGGET			   ; F3
+	const HS_WILD_MEADOW_TM15			   ; F4
 DEF NUM_HS_OBJECTS EQU const_value
