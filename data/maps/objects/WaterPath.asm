@@ -7,6 +7,8 @@ WaterPath_Object:
 	db $44 ; border block
 
 	def_warp_events
+	warp_event  62, 6, WILD_MEADOW, 2
+	warp_event  62, 7, WILD_MEADOW, 2
 
 	def_bg_events
 
