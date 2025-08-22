@@ -1280,3 +1280,8 @@ INCLUDE "data/maps/headers/WildMeadow.asm"
 INCLUDE "scripts/WildMeadow.asm"
 INCLUDE "data/maps/objects/WildMeadow.asm"
 WildMeadow_Blocks: INCBIN "maps/WildMeadow.blk"
+
+INCLUDE "data/maps/headers/WaterPath.asm"
+INCLUDE "scripts/WaterPath.asm"
+INCLUDE "data/maps/objects/WaterPath.asm"
+WaterPath_Blocks: INCBIN "maps/WaterPath.blk"
