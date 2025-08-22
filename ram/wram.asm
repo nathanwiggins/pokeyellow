@@ -2265,7 +2265,8 @@ wMtEmber2FCurScript:: db
 wLancesRoomCurScript:: db
 wMtEmber3FCurScript:: db
 wWildMeadowCurScript:: db
-	ds 2
+wWaterPathCurScript:: db
+	ds 1
 wSilphCo10FCurScript:: db
 wSilphCo11FCurScript:: db
 	ds 1
