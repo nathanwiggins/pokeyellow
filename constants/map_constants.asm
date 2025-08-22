@@ -134,7 +134,7 @@ DEF FIRST_INDOOR_MAP EQU const_value
 	map_const UNUSED_MAP_70,                  0,  0 ; $70
 	map_const LANCES_ROOM,                   13, 13 ; $71
 	map_const WILD_MEADOW,                   15, 15 ; $72
-	map_const WATER_PATH,                    30, 10 ; $73
+	map_const WATER_PATH,                    35, 10 ; $73
 	map_const UNUSED_MAP_74,                  0,  0 ; $74
 	map_const UNUSED_MAP_75,                  0,  0 ; $75
 	map_const HALL_OF_FAME,                   5,  4 ; $76
