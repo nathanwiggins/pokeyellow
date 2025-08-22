@@ -4,11 +4,10 @@
 		const_export WATER_PATH_RARE_CANDY_3
 
 WaterPath_Object:
-	db $44 ; border block
+	db $2C ; border block
 
 	def_warp_events
-	warp_event  62, 6, WILD_MEADOW, 2
-	warp_event  62, 7, WILD_MEADOW, 2
+	warp_event  64, 5, WILD_MEADOW, 2
 
 	def_bg_events
 
