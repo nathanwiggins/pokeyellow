@@ -1,9 +1,9 @@
 _PokeTempleSignText::
-	text "MT.EMBER"
-	line "Mountain Entrance"
+	text "#MON"
+	line "Temple"
 	done
 
  _BillsHideoutSignText::
-	text "MT.EMBER"
-	line "Mountain Entrance"
+	text "Bill's"
+	line "Hideout"
 	done
