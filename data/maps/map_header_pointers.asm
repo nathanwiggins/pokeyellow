@@ -117,7 +117,7 @@ MapHeaderPointers::
 	dw LancesRoom_h
 	dw WildMeadow_h
 	dw WaterPath_h
-	dw LancesRoom_h ; UNUSED_MAP_74
+	dw RuinValley_h
 	dw LancesRoom_h ; UNUSED_MAP_75
 	dw HallOfFame_h
 	dw UndergroundPathNorthSouth_h
