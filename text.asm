@@ -255,6 +255,7 @@ INCLUDE "text/SaffronCity.asm"
 INCLUDE "text/KindleRoad.asm"
 INCLUDE "text/MtEmber2F.asm"
 INCLUDE "text/MtEmber3F.asm"
+INCLUDE "text/RuinValley.asm"
 
 INCLUDE "data/text/text_9.asm"
 
