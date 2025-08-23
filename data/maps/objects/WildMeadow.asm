@@ -8,8 +8,10 @@ WildMeadow_Object:
 
 	def_warp_events
 	warp_event 36, 26, CERULEAN_CAVE_2F, 7
-	warp_event  6,  9, WATER_PATH, 1
-	warp_event  7,  9, WATER_PATH, 1
+	warp_event  4, 29, WATER_PATH, 1
+	warp_event  5, 29, WATER_PATH, 1
+	warp_event  6, 29, WATER_PATH, 1
+	warp_event  7, 29, WATER_PATH, 1
 
 	def_bg_events
 
