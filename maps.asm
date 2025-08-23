@@ -1285,3 +1285,8 @@ INCLUDE "data/maps/headers/WaterPath.asm"
 INCLUDE "scripts/WaterPath.asm"
 INCLUDE "data/maps/objects/WaterPath.asm"
 WaterPath_Blocks: INCBIN "maps/WaterPath.blk"
+
+INCLUDE "data/maps/headers/RuinValley.asm"
+INCLUDE "scripts/RuinValley.asm"
+INCLUDE "data/maps/objects/RuinValley.asm"
+RuinValley_Blocks: INCBIN "maps/RuinValley.blk"

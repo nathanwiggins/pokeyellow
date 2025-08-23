@@ -43,6 +43,8 @@ TryDoWildEncounter:
 	cp FIRST_INDOOR_MAP ; is this an indoor map?
 	jr c, .CantEncounter2
 	ld a, [wCurMapTileset]
+    cp OVERWORLD
+    jr z, .CantEncounter2
 	cp FOREST ; Viridian Forest/Safari Zone
 	jr z, .CantEncounter2
 	ld a, [wGrassRate]
