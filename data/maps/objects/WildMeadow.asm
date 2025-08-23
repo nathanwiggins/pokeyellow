@@ -7,7 +7,7 @@ WildMeadow_Object:
 	db $02 ; border block
 
 	def_warp_events
-	warp_event 26, 26, CERULEAN_CAVE_2F, 7
+	warp_event 36, 26, CERULEAN_CAVE_2F, 7
 	warp_event  6,  9, WATER_PATH, 1
 	warp_event  7,  9, WATER_PATH, 1
 
