@@ -117,7 +117,7 @@ MapHeaderBanks::
 	db BANK(LancesRoom_h)
 	db BANK(WildMeadow_h)
 	db BANK(WaterPath_h)
-	db $1D ; UNUSED_MAP_74
+	db BANK(RuinValley_h)
 	db $1D ; UNUSED_MAP_75
 	db BANK(HallOfFame_h)
 	db BANK(UndergroundPathNorthSouth_h)
