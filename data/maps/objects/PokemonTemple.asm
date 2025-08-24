@@ -1,6 +1,3 @@
-    object_const_def
-    const_export POKEMONTEMPLE_MEW
-
 PokemonTemple_Object:
 	db $01 ; border block
 
@@ -11,6 +8,5 @@ PokemonTemple_Object:
 	def_bg_events
 
 	def_object_events
-	object_event 10, 4, SPRITE_MONSTER, STAY, DOWN, TEXT_POKEMONTEMPLE_MEW, MEW, 30
 
 	def_warps_to POKEMON_TEMPLE
