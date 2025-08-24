@@ -1,38 +1,58 @@
 PokemonTemple_Script:
         call EnableAutoTextBoxDrawing
-        ld hl, PokemonTempleTrainerHeaders
-        ld de, PokemonTemple_ScriptPointers
         ld a, [wPokemonTempleCurScript]
-        call ExecuteCurMapScriptInTable
+        ld hl, PokemonTemple_ScriptPointers
+        jp CallFunctionInTable
+
+PokemonTempleResetScripts:
+        xor a
+        ld [wJoyIgnore], a
         ld [wPokemonTempleCurScript], a
+        ld [wCurMapScript], a
         ret
 
 PokemonTemple_ScriptPointers:
         def_script_pointers
-        dw_const CheckFightingMapTrainers,              SCRIPT_POKEMONTEMPLE_DEFAULT
-        dw_const DisplayEnemyTrainerTextAndStartBattle, SCRIPT_POKEMONTEMPLE_START_BATTLE
-        dw_const EndTrainerBattle,                      SCRIPT_POKEMONTEMPLE_END_BATTLE
+        dw_const PokemonTempleDefaultScript, SCRIPT_POKEMONTEMPLE_DEFAULT
+        dw_const PokemonTempleMewBattleScript, SCRIPT_POKEMONTEMPLE_MEW_BATTLE
+
+PokemonTempleDefaultScript:
+        CheckEvent EVENT_BEAT_MEW
+        ret nz
+        ld a, [wYCoord]
+        cp 4
+        ret nc
+        ld a, TEXT_POKEMONTEMPLE_MEW
+        ldh [hTextID], a
+        call DisplayTextID
+        ld a, MEW
+        call PlayCry
+        call WaitForSoundToFinish
+        ld a, MEW
+        ld [wCurOpponent], a
+        ld a, 30
+        ld [wCurEnemyLevel], a
+        ld a, SCRIPT_POKEMONTEMPLE_MEW_BATTLE
+        ld [wPokemonTempleCurScript], a
+        ld [wCurMapScript], a
+        ret
+
+PokemonTempleMewBattleScript:
+        ld a, [wIsInBattle]
+        cp $ff
+        jr z, PokemonTempleResetScripts
+        call UpdateSprites
+        SetEvent EVENT_BEAT_MEW
+        call Delay3
+        ld a, SCRIPT_POKEMONTEMPLE_DEFAULT
+        ld [wPokemonTempleCurScript], a
+        ld [wCurMapScript], a
+        ret
 
 PokemonTemple_TextPointers:
         def_text_pointers
         dw_const PokemonTempleMewText, TEXT_POKEMONTEMPLE_MEW
 
-PokemonTempleTrainerHeaders:
-        def_trainers 4
-PokemonTempleMewTrainerHeader:
-        trainer EVENT_BEAT_MEW, 0, PokemonTempleMewBattleText, PokemonTempleMewBattleText, PokemonTempleMewBattleText
-        db -1 ; end
-
 PokemonTempleMewText:
-        text_asm
-        ld hl, PokemonTempleMewTrainerHeader
-        call TalkToTrainer
-        jp TextScriptEnd
-
-PokemonTempleMewBattleText:
         text_far _PokemonTempleMewBattleText
-        text_asm
-        ld a, MEW
-        call PlayCry
-        call WaitForSoundToFinish
-        jp TextScriptEnd
+        text_end
