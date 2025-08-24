@@ -118,7 +118,7 @@ MapHeaderBanks::
 	db BANK(WildMeadow_h)
 	db BANK(WaterPath_h)
 	db BANK(RuinValley_h)
-	db $1D ; UNUSED_MAP_75
+	db BANK(PokemonTemple_h)
 	db BANK(HallOfFame_h)
 	db BANK(UndergroundPathNorthSouth_h)
 	db BANK(ChampionsRoom_h)
