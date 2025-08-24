@@ -11,6 +11,6 @@ PokemonTemple_Object:
 	def_bg_events
 
 	def_object_events
-	object_event 10, 4, SPRITE_MEW, STAY, DOWN, TEXT_POKEMONTEMPLE_MEW, MEW, 30
+	object_event 10, 4, SPRITE_MONSTER, STAY, DOWN, TEXT_POKEMONTEMPLE_MEW, MEW, 30
 
 	def_warps_to POKEMON_TEMPLE
