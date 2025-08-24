@@ -1,3 +1,5 @@
 _PokemonTempleMewBattleText::
-        text "Mew!@"
+        text "..."
+	line "..."
+	cont "Mew!@"
         text_end
