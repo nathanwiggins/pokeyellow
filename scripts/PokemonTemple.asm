@@ -18,7 +18,7 @@ PokemonTemple_TextPointers:
         dw_const PokemonTempleMewText, TEXT_POKEMONTEMPLE_MEW
 
 PokemonTempleTrainerHeaders:
-        def_trainers 3
+        def_trainers 4
 PokemonTempleMewTrainerHeader:
         trainer EVENT_BEAT_MEW, 0, PokemonTempleMewBattleText, PokemonTempleMewBattleText, PokemonTempleMewBattleText
         db -1 ; end
