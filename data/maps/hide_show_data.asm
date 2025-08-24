@@ -120,7 +120,7 @@ MapHSPointers:
 	dw WildMeadowHS
 	dw WaterPathHS
 	dw NoHS
-	dw PokemonTempleHS
+	dw NoHS
 	dw NoHS
 	dw NoHS
 	dw ChampionsRoomHS
@@ -591,7 +591,5 @@ WaterPathHS:
 	db WATER_PATH, WATER_PATH_RARE_CANDY_1, SHOW
 	db WATER_PATH, WATER_PATH_RARE_CANDY_2, SHOW
 	db WATER_PATH, WATER_PATH_RARE_CANDY_3, SHOW
-PokemonTempleHS:
-	db POKEMON_TEMPLE, POKEMONTEMPLE_MEW, SHOW
     db $FF, $01, SHOW ; end
     assert_table_length NUM_HS_OBJECTS + 1
