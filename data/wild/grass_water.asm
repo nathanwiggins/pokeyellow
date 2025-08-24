@@ -117,7 +117,7 @@ WildDataPointers:
 	dw WildMeadowWildMons
 	dw WaterPathWildMons
 	dw RuinValleyWildMons
-	dw NothingWildMons
+	dw PokemonTempleWildMons
 	dw NothingWildMons
 	dw NothingWildMons
 	dw NothingWildMons
@@ -330,3 +330,4 @@ INCLUDE "data/wild/maps/MtEmber3F.asm"
 INCLUDE "data/wild/maps/WildMeadow.asm"
 INCLUDE "data/wild/maps/WaterPath.asm"
 INCLUDE "data/wild/maps/RuinValley.asm"
+INCLUDE "data/wild/maps/PokemonTemple.asm"
