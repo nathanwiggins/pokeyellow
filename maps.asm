@@ -1290,3 +1290,8 @@ INCLUDE "data/maps/headers/RuinValley.asm"
 INCLUDE "scripts/RuinValley.asm"
 INCLUDE "data/maps/objects/RuinValley.asm"
 RuinValley_Blocks: INCBIN "maps/RuinValley.blk"
+
+INCLUDE "data/maps/headers/PokemonTemple.asm"
+INCLUDE "scripts/PokemonTemple.asm"
+INCLUDE "data/maps/objects/PokemonTemple.asm"
+PokemonTemple_Blocks: INCBIN "maps/PokemonTemple.blk"
