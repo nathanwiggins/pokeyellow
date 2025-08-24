@@ -82,6 +82,7 @@ InternalMapEntries:
 	internal_map WILD_MEADOW,					 8,  0, WildMeadowName
 	internal_map WATER_PATH,					 7,  0, WaterPathName
 	internal_map RUIN_VALLEY,					 6,  0, RuinValleyName
+	internal_map POKEMON_TEMPLE,				 6,  0, PokemonTempleName
 	internal_map HALL_OF_FAME,                   0,  2, PokemonLeagueName
 	internal_map UNDERGROUND_PATH_NORTH_SOUTH,  10,  5, UndergroundPathName
 	internal_map CHAMPIONS_ROOM,                 0,  2, PokemonLeagueName
