@@ -6,11 +6,11 @@ PokemonTemple_Object:
 
 	def_warp_events
 	warp_event 10, 17, LAST_MAP, 1
-  warp_event 11, 17, LAST_MAP, 1
+ 	warp_event 11, 17, LAST_MAP, 1
 
 	def_bg_events
 
 	def_object_events
-	object_event 7, 5, SPRITE_MONSTER, STAY, UP, TEXT_POKEMONTEMPLE_MEW, MEW, 30
+	object_event 10, 4, SPRITE_MONSTER, STAY, DOWN, TEXT_POKEMONTEMPLE_MEW, MEW, 30
 
 	def_warps_to POKEMON_TEMPLE
