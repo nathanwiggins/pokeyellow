@@ -117,6 +117,10 @@ DisplayNamingScreen:
 	ld a, %11100100 ; 3210
 	ldh [rBGP], a
 	ldh [rOBP0], a
+	ldh [rOBP1], a
+	farcall UpdateCGBPal_BGP
+	farcall UpdateCGBPal_OBP0
+	farcall UpdateCGBPal_OBP1
 .ABStartReturnPoint
 	ld a, [wNamingScreenSubmitName]
 	and a
