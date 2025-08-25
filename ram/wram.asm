@@ -2266,7 +2266,7 @@ wLancesRoomCurScript:: db
 wMtEmber3FCurScript:: db
 wWildMeadowCurScript:: db
 wWaterPathCurScript:: db
-	ds 1
+wPokemonTempleCurScript:: db
 wSilphCo10FCurScript:: db
 wSilphCo11FCurScript:: db
 	ds 1

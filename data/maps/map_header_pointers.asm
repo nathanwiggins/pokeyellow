@@ -118,7 +118,7 @@ MapHeaderPointers::
 	dw WildMeadow_h
 	dw WaterPath_h
 	dw RuinValley_h
-	dw LancesRoom_h ; UNUSED_MAP_75
+	dw PokemonTemple_h
 	dw HallOfFame_h
 	dw UndergroundPathNorthSouth_h
 	dw ChampionsRoom_h

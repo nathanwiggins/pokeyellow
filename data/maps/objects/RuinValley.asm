@@ -2,6 +2,7 @@ RuinValley_Object:
 	db $2C ; border block
 
 	def_warp_events
+	warp_event 20, 23, POKEMON_TEMPLE, 1
 
 	def_bg_events
 	bg_event 19, 25, TEXT_POKETEMPLE_SIGN
