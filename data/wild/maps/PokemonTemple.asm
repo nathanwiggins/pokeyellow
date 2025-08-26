@@ -12,6 +12,7 @@ PokemonTempleWildMons:
 	db  30, MEW
 	end_grass_wildmons
 
+; Yellow Version:
 ; CLEFABLE (50%)
 ; WIGGLYTUFF (49%)
 ; MEW (1%)
