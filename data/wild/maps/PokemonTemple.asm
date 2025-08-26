@@ -12,5 +12,9 @@ PokemonTempleWildMons:
 	db  30, MEW
 	end_grass_wildmons
 
+; CLEFABLE (50%)
+; WIGGLYTUFF (49%)
+; MEW (1%)
+
 	def_water_wildmons 0 ; encounter rate
 	end_water_wildmons
