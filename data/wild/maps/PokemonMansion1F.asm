@@ -1,16 +1,24 @@
 PokemonMansion1FWildMons:
 	def_grass_wildmons 10 ; encounter rate
-	db 34, RATTATA
-	db 34, RATICATE
-	db 23, GRIMER
-	db 26, GROWLITHE
-	db 37, RATTATA
-	db 37, RATICATE
-	db 30, GROWLITHE
-	db 26, GRIMER
-	db 34, GROWLITHE
-	db 38, GROWLITHE
+	db  45, MUK
+	db  45, MUK
+	db  45, WEEZING
+	db  45, WEEZING
+	db  45, HYPNO
+	db  45, HYPNO
+	db  45, MR_MIME
+	db  50, HITMONLEE
+	db  50, HITMONCHAN
+	db  50, HITMONCHAN
 	end_grass_wildmons
+
+; Yellow Version:
+; MUK (30%)
+; WEEZING (30%)
+; HYPNO (20%)
+; MR_MIME (10%)
+; HITMONLEE (5%)
+; HITMONCHAN (5%)
 
 	def_water_wildmons 0 ; encounter rate
 	end_water_wildmons
