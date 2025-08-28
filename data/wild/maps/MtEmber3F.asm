@@ -1,16 +1,24 @@
 MtEmber3FWildMons:
 	def_grass_wildmons 10 ; encounter rate
-	db  8, CHARIZARD
-	db  7, CHARIZARD
-	db  9, CHARIZARD
-	db  8, CHARIZARD
-	db  6, CHARIZARD
-	db 10, CHARIZARD
-	db 10, CHARIZARD
-	db  8, CHARIZARD
-	db 11, CHARIZARD
-	db  8, CHARIZARD
+	db  45, RAPIDASH
+	db  45, RAPIDASH
+	db  45, GOLBAT
+	db  45, GOLBAT
+	db  45, GOLBAT
+	db  45, GOLBAT
+	db  45, MAGMAR
+	db  30, CHARMELEON
+	db  45, DRAGONAIR
+	db  50, MOLTRES
 	end_grass_wildmons
+
+; Yellow Version:
+; RAPIDASH (30%)
+; GOLBAT (50%)
+; MAGMAR (10%)
+; CHARMELEON (5%)
+; DRAGONAIR (4%)
+; MOLTRES (1%)
 
 	def_water_wildmons 0 ; encounter rate
 	end_water_wildmons
