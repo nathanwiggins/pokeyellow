@@ -1,16 +1,22 @@
 Route21WildMons:
 	def_grass_wildmons 25 ; encounter rate
-	db 15, PIDGEY
-	db 13, RATTATA
-	db 13, PIDGEY
-	db 11, PIDGEY
-	db 17, PIDGEY
-	db 15, RATTATA
-	db 15, RATICATE
-	db 17, PIDGEOTTO
-	db 19, PIDGEOTTO
-	db 15, PIDGEOTTO
+	db  45, PARASECT
+	db  45, PARASECT
+	db  45, PARASECT
+	db  45, PERSIAN
+	db  45, PERSIAN
+	db  45, PERSIAN
+	db  45, TANGELA
+	db  45, TANGELA
+	db  30, IVYSAUR
+	db  30, IVYSAUR
 	end_grass_wildmons
+
+; Yellow Version:
+; PARASECT (45%)
+; PERSIAN (35%)
+; TANGELA (15%)
+; IVYSAUR (5%)
 
 	def_water_wildmons 5 ; encounter rate
 	db  5, TENTACOOL
