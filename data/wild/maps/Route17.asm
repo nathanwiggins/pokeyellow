@@ -1,16 +1,24 @@
 Route17WildMons:
 	def_grass_wildmons 25 ; encounter rate
-	db 26, DODUO
-	db 27, FEAROW
-	db 27, DODUO
-	db 28, DODUO
-	db 28, PONYTA
-	db 30, PONYTA
-	db 29, FEAROW
-	db 28, DODUO
-	db 32, PONYTA
-	db 29, DODRIO
+	db  45, RATICATE
+	db  45, RATICATE
+	db  45, FEAROW
+	db  45, FEAROW
+	db  45, DODRIO
+	db  45, DODRIO
+	db  45, SNORLAX
+	db  45, KANGASKHAN
+	db  45, TAUROS
+	db  45, TAUROS
 	end_grass_wildmons
+
+; Yellow Version:
+; RATICATE (30%)
+; FEAROW (30%)
+; DODRIO (20%)
+; SNORLAX (10%)
+; KANGASKHAN (5%)
+; TAUROS (5%)
 
 	def_water_wildmons 0 ; encounter rate
 	end_water_wildmons
