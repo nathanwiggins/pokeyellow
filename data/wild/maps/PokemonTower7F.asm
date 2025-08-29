@@ -1,16 +1,22 @@
 PokemonTower7FWildMons:
 	def_grass_wildmons 20 ; encounter rate
-	db 24, GASTLY
-	db 25, GASTLY
-	db 26, GASTLY
-	db 27, GASTLY
-	db 28, GASTLY
-	db 23, GASTLY
-	db 24, CUBONE
-	db 29, GASTLY
-	db 24, HAUNTER
-	db 29, HAUNTER
+	db  10, GASTLY
+	db  10, GASTLY
+	db  10, GASTLY
+	db  10, GASTLY
+	db  25, HAUNTER
+	db  25, HAUNTER
+	db  25, KADABRA
+	db  25, DITTO
+	db  25, DITTO
+	db  25, DITTO
 	end_grass_wildmons
+
+; Yellow Version:
+; GASTLY (60%)
+; HAUNTER (20%)
+; KADABRA (10%)
+; DITTO (10%)
 
 	def_water_wildmons 0 ; encounter rate
 	end_water_wildmons
