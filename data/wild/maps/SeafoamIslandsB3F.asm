@@ -22,14 +22,21 @@ SeafoamIslandsB3FWildMons:
 ; WARTORTLE (5%)
 
 	def_water_wildmons 5 ; encounter rate
-	db 25, TENTACOOL
-	db 30, TENTACOOL
-	db 20, TENTACOOL
-	db 30, STARYU
-	db 35, TENTACOOL
-	db 30, STARYU
-	db 40, TENTACOOL
-	db 30, STARYU
-	db 30, STARYU
-	db 30, STARYU
+	db  45, TENTACRUEL
+	db  45, TENTACRUEL
+	db  45, SEAKING
+	db  45, SEAKING
+	db  45, SEADRA
+	db  45, SEADRA
+	db  60, STARMIE
+	db  45, LAPRAS
+	db  45, LAPRAS
+	db  45, LAPRAS
 	end_water_wildmons
+
+; Yellow Version:
+; TENTACRUEL (30%)
+; SEAKING (30%)
+; SEADRA (20%)
+; STARMIE (10%)
+; LAPRAS (10%)
