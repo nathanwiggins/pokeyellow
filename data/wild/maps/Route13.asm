@@ -13,14 +13,19 @@ Route13WildMons:
 	end_grass_wildmons
 
 	def_water_wildmons 3 ; encounter rate
-	db 15, SLOWPOKE
-	db 15, SLOWPOKE
-	db 15, SLOWPOKE
-	db 15, SLOWPOKE
-	db 15, SLOWPOKE
-	db 15, SLOWPOKE
-	db 15, SLOWPOKE
-	db 15, SLOWPOKE
-	db 15, SLOWBRO
-	db 20, SLOWBRO
+	db  10, TENTACOOL
+	db  10, TENTACOOL
+	db  10, TENTACOOL
+	db  10, TENTACOOL
+	db  20, SHELLDER
+	db  20, SHELLDER
+	db  20, STARYU
+	db  20, STARYU
+	db  20, STARYU
+	db  20, STARYU
 	end_water_wildmons
+
+; Yellow Version:
+; TENTACOOL (60%)
+; SHELLDER (20%)
+; STARYU (20%)
