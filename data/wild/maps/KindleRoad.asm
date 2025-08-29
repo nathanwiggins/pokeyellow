@@ -3,14 +3,21 @@ KindleRoadWildMons:
 	end_grass_wildmons
 
 	def_water_wildmons 5 ; encounter rate
-	db  5, TENTACRUEL
-	db 10, TENTACRUEL
-	db 15, TENTACRUEL
-	db  5, TENTACRUEL
-	db 10, TENTACRUEL
-	db 15, TENTACRUEL
-	db 20, TENTACRUEL
-	db 30, TENTACRUEL
-	db 35, TENTACRUEL
-	db 40, TENTACRUEL
+	db  45, TENTACRUEL
+	db  45, TENTACRUEL
+	db  45, SEAKING
+	db  45, SEAKING
+	db  45, SEADRA
+	db  45, SEADRA
+	db  60, STARMIE
+	db  45, LAPRAS
+	db  45, LAPRAS
+	db  45, LAPRAS
 	end_water_wildmons
+
+; Yellow Version:
+; TENTACRUEL (30%)
+; SEAKING (30%)
+; SEADRA (20%)
+; STARMIE (10%)
+; LAPRAS (10%)
