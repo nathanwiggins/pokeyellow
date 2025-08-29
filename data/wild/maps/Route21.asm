@@ -19,14 +19,21 @@ Route21WildMons:
 ; IVYSAUR (5%)
 
 	def_water_wildmons 5 ; encounter rate
-	db  5, TENTACOOL
-	db 10, TENTACOOL
-	db 15, TENTACOOL
-	db  5, TENTACOOL
-	db 10, TENTACOOL
-	db 15, TENTACOOL
-	db 20, TENTACOOL
-	db 30, TENTACOOL
-	db 35, TENTACOOL
-	db 40, TENTACOOL
+	db  45, TENTACRUEL
+	db  45, TENTACRUEL
+	db  45, SEAKING
+	db  45, SEAKING
+	db  45, SEADRA
+	db  45, SEADRA
+	db  60, STARMIE
+	db  45, LAPRAS
+	db  45, LAPRAS
+	db  45, LAPRAS
 	end_water_wildmons
+
+; Yellow Version:
+; TENTACRUEL (30%)
+; SEAKING (30%)
+; SEADRA (20%)
+; STARMIE (10%)
+; LAPRAS (10%)
