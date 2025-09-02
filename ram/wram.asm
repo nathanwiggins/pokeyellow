@@ -2449,15 +2449,15 @@ wOpponentAfterWrongAnswer:: db
 ; mostly copied from map-specific map script pointer and written back later
 wCurMapScript:: db
 
-	ds 7
+wRandomWildMonClasses:: ds NUM_RANDOM_CLASSES
+
+	ds 4
 
 wPlayTimeHours:: db
 wPlayTimeMaxed:: db
 wPlayTimeMinutes:: db
 wPlayTimeSeconds:: db
 wPlayTimeFrames:: db
-
-wRandomWildMonClasses:: ds NUM_RANDOM_CLASSES
 
 wSafariZoneGameOver:: db
 
