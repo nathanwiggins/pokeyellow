@@ -2457,6 +2457,8 @@ wPlayTimeMinutes:: db
 wPlayTimeSeconds:: db
 wPlayTimeFrames:: db
 
+wRandomWildMonClasses:: ds NUM_RANDOM_CLASSES
+
 wSafariZoneGameOver:: db
 
 wNumSafariBalls:: db
