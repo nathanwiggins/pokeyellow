@@ -2289,7 +2289,9 @@ wRoute18Gate1FCurScript:: db
 	ds 78
 wGameProgressFlagsEnd::
 
-	ds 56
+wRandomWildMonClasses:: ds NUM_RANDOM_CLASSES
+
+	ds 53
 
 wObtainedHiddenItemsFlags:: flag_array MAX_HIDDEN_ITEMS
 
@@ -2449,9 +2451,7 @@ wOpponentAfterWrongAnswer:: db
 ; mostly copied from map-specific map script pointer and written back later
 wCurMapScript:: db
 
-wRandomWildMonClasses:: ds NUM_RANDOM_CLASSES
-
-	ds 4
+	ds 7
 
 wPlayTimeHours:: db
 wPlayTimeMaxed:: db
