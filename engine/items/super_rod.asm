@@ -8,7 +8,7 @@ ReadSuperRodData:
 	jr z, .notfound
 	cp c
 	jr z, .found
-	ld de, $8
+	ld de, $6
 	add hl, de
 	jr .loop
 .found
@@ -25,10 +25,6 @@ GenerateRandomFishingEncounter:
 	inc hl
 	inc hl
 	cp $b2
-	jr c, .asm_f5ed6
-	inc hl
-	inc hl
-	cp $e5
 	jr c, .asm_f5ed6
 	inc hl
 	inc hl
