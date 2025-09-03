@@ -14,3 +14,6 @@ SafariZoneEastWildMons:
 
 	def_water_wildmons 0 ; encounter rate
 	end_water_wildmons
+
+;Land 6 11 16 21
+;Water 4 9 14 19
