@@ -1,0 +1,17 @@
+RandomWildClass20:
+    db 15
+		db PIDGEOT
+		db RAICHU
+		db NIDOQUEEN
+		db NIDOKING
+		db CLEFABLE
+		db NINETALES
+		db WIGGLYTUFF
+		db VILEPLUME
+		db ARCANINE
+		db ALAKAZAM
+		db MACHAMP
+		db VICTREEBEL
+		db GOLEM
+		db GENGAR
+		db EXEGGUTOR

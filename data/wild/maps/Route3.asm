@@ -1,16 +1,23 @@
 Route3WildMons:
 	def_grass_wildmons 20 ; encounter rate
-	db  8, SPEAROW
-	db  9, SPEAROW
-	db  9, MANKEY
-	db 10, SPEAROW
-	db  8, SANDSHREW
-	db 10, RATTATA
-	db 10, SANDSHREW
-	db 12, RATTATA
-	db 11, SPEAROW
-	db 12, SPEAROW
+	db  10, MAGNEMITE
+	db  10, MAGNEMITE
+	db  10, VOLTORB
+	db  10, VOLTORB
+	db  10, PONYTA
+	db  10, PONYTA
+	db  10, PONYTA
+	db  20, PIKACHU
+	db  10, EEVEE
+	db  10, EEVEE
 	end_grass_wildmons
+
+; Yellow Version:
+; MAGNEMITE (30%)
+; VOLTORB (30%)
+; PONYTA (30%)
+; PIKACHU (5%)
+; EEVEE (5%)
 
 	def_water_wildmons 0 ; encounter rate
 	end_water_wildmons

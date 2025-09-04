@@ -1,16 +1,23 @@
 Route24WildMons:
 	def_grass_wildmons 25 ; encounter rate
-	db 12, ODDISH
-	db 12, BELLSPROUT
-	db 13, PIDGEY
-	db 14, ODDISH
-	db 14, BELLSPROUT
-	db 15, PIDGEY
-	db 13, VENONAT
-	db 16, VENONAT
-	db 17, PIDGEY
-	db 17, PIDGEOTTO
+	db  10, ODDISH
+	db  10, ODDISH
+	db  10, BELLSPROUT
+	db  10, BELLSPROUT
+	db  10, METAPOD
+	db  10, KAKUNA
+	db  10, VENONAT
+	db  10, VENONAT
+	db  10, VENONAT
+	db  10, VENONAT
 	end_grass_wildmons
+
+; Yellow Version:
+; ODDISH (30%)
+; BELLSPROUT (30%)
+; METAPOD (10%)
+; KAKUNA (10%)
+; VENONAT (20%)
 
 	def_water_wildmons 0 ; encounter rate
 	end_water_wildmons

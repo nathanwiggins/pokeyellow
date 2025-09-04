@@ -1,26 +1,37 @@
 Route13WildMons:
 	def_grass_wildmons 15 ; encounter rate
-	db 25, ODDISH
-	db 25, BELLSPROUT
-	db 28, PIDGEOTTO
-	db 28, PIDGEY
-	db 27, ODDISH
-	db 27, BELLSPROUT
-	db 29, GLOOM
-	db 29, WEEPINBELL
-	db 26, FARFETCHD
-	db 31, FARFETCHD
+	db  30, GLOOM
+	db  30, GLOOM
+	db  30, WEEPINBELL
+	db  30, WEEPINBELL
+	db  30, POLIWHIRL
+	db  30, POLIWHIRL
+	db  30, POLIWHIRL
+	db  45, LICKITUNG
+	db  45, LICKITUNG
+	db  45, LICKITUNG
 	end_grass_wildmons
 
+; Yellow Version:
+; GLOOM (30%)
+; WEEPINBELL (30%)
+; POLIWHIRL (30%)
+; LICKITUNG (10%)
+
 	def_water_wildmons 3 ; encounter rate
-	db 15, SLOWPOKE
-	db 15, SLOWPOKE
-	db 15, SLOWPOKE
-	db 15, SLOWPOKE
-	db 15, SLOWPOKE
-	db 15, SLOWPOKE
-	db 15, SLOWPOKE
-	db 15, SLOWPOKE
-	db 15, SLOWBRO
-	db 20, SLOWBRO
+	db  10, TENTACOOL
+	db  10, TENTACOOL
+	db  10, TENTACOOL
+	db  10, TENTACOOL
+	db  20, SHELLDER
+	db  20, SHELLDER
+	db  20, STARYU
+	db  20, STARYU
+	db  20, STARYU
+	db  20, STARYU
 	end_water_wildmons
+
+; Yellow Version:
+; TENTACOOL (60%)
+; SHELLDER (20%)
+; STARYU (20%)

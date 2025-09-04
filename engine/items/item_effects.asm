@@ -2038,7 +2038,7 @@ ItemUseGoodRod:
 	srl a
 	jr c, .SetBite
 	and %11
-	cp 2
+	cp 3
 	jr nc, .RandomLoop
 	; choose which monster appears
 	ld hl, GoodRodMons
@@ -3167,9 +3167,27 @@ CheckMapForMon:
 	inc hl
 	ld b, NUM_WILDMONS
 .loop
+    ld a, [wPokedexNum]
+    cp [hl]
+    jr z, .store
+    ld a, [hl]
+    cp FIRST_RANDOM_CLASS
+    jr c, .nextEntry
+	push bc
+	push hl
+	sub FIRST_RANDOM_CLASS
+	ld c, a
+	ld b, 0
+	ld hl, wRandomWildMonClasses
+	add hl, bc
+	ld a, [hl]
+	ld b, a
 	ld a, [wPokedexNum]
-	cp [hl]
+	cp b
+	pop hl
+	pop bc
 	jr nz, .nextEntry
+.store
 	ld a, c
 	ld [de], a
 	inc de

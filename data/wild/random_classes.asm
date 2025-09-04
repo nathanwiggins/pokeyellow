@@ -1,0 +1,50 @@
+RandomWildClassPointers::
+    dw RandomWildClass1
+    dw RandomWildClass2
+    dw RandomWildClass3
+    dw RandomWildClass4
+    dw RandomWildClass5
+    dw RandomWildClass6
+    dw RandomWildClass7
+    dw RandomWildClass8
+    dw RandomWildClass9
+    dw RandomWildClass10
+    dw RandomWildClass11
+    dw RandomWildClass12
+    dw RandomWildClass13
+    dw RandomWildClass14
+    dw RandomWildClass15
+    dw RandomWildClass16
+    dw RandomWildClass17
+    dw RandomWildClass18
+    dw RandomWildClass19
+    dw RandomWildClass20
+    dw RandomWildClass21
+    dw RandomWildClass22
+    dw RandomWildClass23
+    dw RandomWildClass24
+
+INCLUDE "data/wild/classes/Class1.asm"
+INCLUDE "data/wild/classes/Class2.asm"
+INCLUDE "data/wild/classes/Class3.asm"
+INCLUDE "data/wild/classes/Class4.asm"
+INCLUDE "data/wild/classes/Class5.asm"
+INCLUDE "data/wild/classes/Class6.asm"
+INCLUDE "data/wild/classes/Class7.asm"
+INCLUDE "data/wild/classes/Class8.asm"
+INCLUDE "data/wild/classes/Class9.asm"
+INCLUDE "data/wild/classes/Class10.asm"
+INCLUDE "data/wild/classes/Class11.asm"
+INCLUDE "data/wild/classes/Class12.asm"
+INCLUDE "data/wild/classes/Class13.asm"
+INCLUDE "data/wild/classes/Class14.asm"
+INCLUDE "data/wild/classes/Class15.asm"
+INCLUDE "data/wild/classes/Class16.asm"
+INCLUDE "data/wild/classes/Class17.asm"
+INCLUDE "data/wild/classes/Class18.asm"
+INCLUDE "data/wild/classes/Class19.asm"
+INCLUDE "data/wild/classes/Class20.asm"
+INCLUDE "data/wild/classes/Class21.asm"
+INCLUDE "data/wild/classes/Class22.asm"
+INCLUDE "data/wild/classes/Class23.asm"
+INCLUDE "data/wild/classes/Class24.asm"

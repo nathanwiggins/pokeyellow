@@ -3,14 +3,20 @@ WaterPathWildMons:
 	end_grass_wildmons
 
 	def_water_wildmons 5 ; encounter rate
-	db  5, BLASTOISE
-	db 10, BLASTOISE
-	db 15, BLASTOISE
-	db  5, BLASTOISE
-	db 10, BLASTOISE
-	db 15, BLASTOISE
-	db 20, BLASTOISE
-	db 30, BLASTOISE
-	db 35, BLASTOISE
-	db 40, BLASTOISE
+	db  60, POLIWRATH
+	db  60, POLIWRATH
+	db  60, POLIWRATH
+	db  60, POLIWRATH
+	db  60, GYARADOS
+	db  60, GYARADOS
+	db  60, GYARADOS
+	db  60, VAPOREON
+	db  65, BLASTOISE
+	db  65, BLASTOISE
 	end_water_wildmons
+
+; Yellow Version:
+; POLIWRATH (60%)
+; GYARADOS (30%)
+; VAPOREON (5%)
+; BLASTOISE (5%)

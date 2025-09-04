@@ -2289,7 +2289,9 @@ wRoute18Gate1FCurScript:: db
 	ds 78
 wGameProgressFlagsEnd::
 
-	ds 56
+wRandomWildMonClasses:: ds NUM_RANDOM_CLASSES
+
+	ds 32
 
 wObtainedHiddenItemsFlags:: flag_array MAX_HIDDEN_ITEMS
 

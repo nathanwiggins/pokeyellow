@@ -1,16 +1,25 @@
 SeafoamIslands1FWildMons:
 	def_grass_wildmons 15 ; encounter rate
-	db 18, ZUBAT
-	db 25, KRABBY
-	db 27, KRABBY
-	db 27, ZUBAT
-	db 36, ZUBAT
-	db 28, SLOWPOKE
-	db 30, SLOWPOKE
-	db  9, ZUBAT
-	db 27, GOLBAT
-	db 36, GOLBAT
+	db  45, GOLDUCK
+	db  45, GOLDUCK
+	db  45, SLOWBRO
+	db  45, SLOWBRO
+	db  45, JYNX
+	db  45, DEWGONG
+	db  45, KINGLER
+	db  60, CLOYSTER
+	db  30, WARTORTLE
+	db  30, WARTORTLE
 	end_grass_wildmons
+
+; Yellow Version:
+; GOLDUCK (30%)
+; SLOWBRO (30%)
+; JYNX (10%)
+; DEWGONG (10%)
+; KINGLER (10%)
+; CLOYSTER (5%)
+; WARTORTLE (5%)
 
 	def_water_wildmons 0 ; encounter rate
 	end_water_wildmons

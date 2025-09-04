@@ -1,16 +1,24 @@
 CeruleanCave2FWildMons:
 	def_grass_wildmons 15 ; encounter rate
-	db 52, GOLBAT
-	db 57, GOLBAT
-	db 50, GRAVELER
-	db 56, SANDSLASH
-	db 50, RHYHORN
-	db 60, DITTO
-	db 58, GLOOM
-	db 58, WEEPINBELL
-	db 60, RHYDON
-	db 58, RHYDON
+	db  60, NIDOKING
+	db  60, NIDOQUEEN
+	db  50, ALAKAZAM
+	db  50, ALAKAZAM
+	db  50, GENGAR
+	db  50, GENGAR
+	db  50, GENGAR
+	db  60, AERODACTYL
+	db  65, DRAGONITE
+	db  65, DRAGONITE
 	end_grass_wildmons
+
+; Yellow Version:
+; NIDOKING (15%)
+; NIDOQUEEN (15%)
+; ALAKAZAM (30%)
+; GENGAR (30%)
+; AERODACTYL (5%)
+; DRAGONITE (5%)
 
 	def_water_wildmons 0 ; encounter rate
 	end_water_wildmons
