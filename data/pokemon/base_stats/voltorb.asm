@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db ELECTRIC, ELECTRIC ; type
-	db 190 ; catch rate
+	db 255 ; catch rate
 	db 103 ; base exp
 
 	INCBIN "gfx/pokemon/front/voltorb.pic", 0, 1 ; sprite dimensions
