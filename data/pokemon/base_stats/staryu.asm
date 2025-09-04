@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db WATER, WATER ; type
-	db 225 ; catch rate
+	db 205 ; catch rate
 	db 106 ; base exp
 
 	INCBIN "gfx/pokemon/front/staryu.pic", 0, 1 ; sprite dimensions
