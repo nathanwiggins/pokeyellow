@@ -1,4 +1,4 @@
-BluesHouse_Object:
+BillsHideout_Object:
 	db $a ; border block
 
 	def_warp_events
@@ -9,4 +9,4 @@ BluesHouse_Object:
 
 	def_object_events
 
-	def_warps_to BLUES_HOUSE
+	def_warps_to BILLS_HIDEOUT
