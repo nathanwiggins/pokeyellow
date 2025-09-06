@@ -162,7 +162,12 @@ BillRandomTeam:
         cp NUM_POKEMON
         jr nc, .loop
         inc a
+        ld [wPokedexNum], a
+        push bc
+        callfar PokedexToIndex
+        ld a, [wPokedexNum]
         ld [wCurPartySpecies], a
+        pop bc
         ld a, 100
         ld [wCurEnemyLevel], a
         ld a, ENEMY_PARTY_DATA
