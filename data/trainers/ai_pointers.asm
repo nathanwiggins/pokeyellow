@@ -49,6 +49,7 @@ TrainerAIPointers:
 	dbw 1, Rival3AI ; rival3
 	dbw 2, LoreleiAI ; lorelei
 	dbw 3, GenericAI
-	dbw 2, AgathaAI ; agatha
-	dbw 1, LanceAI ; lance
-	assert_table_length NUM_TRAINERS
+        dbw 2, AgathaAI ; agatha
+        dbw 1, LanceAI ; lance
+        dbw 3, GenericAI ; bill
+        assert_table_length NUM_TRAINERS

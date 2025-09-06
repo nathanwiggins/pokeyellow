@@ -44,7 +44,8 @@ TrainerNames::
 	li "RIVAL2"
 	li "RIVAL3"
 	li "LORELEI"
-	li "CHANNELER"
-	li "AGATHA"
-	li "LANCE"
-	assert_list_length NUM_TRAINERS
+        li "CHANNELER"
+        li "AGATHA"
+        li "LANCE"
+        li "BILL"
+        assert_list_length NUM_TRAINERS
