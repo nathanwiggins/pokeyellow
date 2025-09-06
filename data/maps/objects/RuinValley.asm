@@ -3,6 +3,7 @@ RuinValley_Object:
 
 	def_warp_events
 	warp_event 20, 23, POKEMON_TEMPLE, 1
+	warp_event 35, 35, BILLS_HIDEOUT, 1
 
 	def_bg_events
 	bg_event 19, 25, TEXT_POKETEMPLE_SIGN
