@@ -8,6 +8,6 @@ BillsHideout_Object:
 	def_bg_events
 
         def_object_events
-        object_event  2,  2, SPRITE_BILL, STAY, DOWN, TEXT_BILLSHIDEOUT_BILL
+        object_event  2,  2, SPRITE_SUPER_NERD, STAY, DOWN, TEXT_BILLSHIDEOUT_BILL
 
         def_warps_to BILLS_HIDEOUT
