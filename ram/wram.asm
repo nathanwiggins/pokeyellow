@@ -2277,6 +2277,7 @@ wCinnabarGymCurScript:: db
 wGameCornerCurScript:: db
 wRoute16Gate1FCurScript:: db
 wBillsHouseCurScript:: db
+wBillsHideoutCurScript:: db
 wRoute5GateCurScript:: db
 wPowerPlantCurScript:: ; overload
 wRoute7GateCurScript:: db

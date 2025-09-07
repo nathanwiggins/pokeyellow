@@ -35,8 +35,9 @@ InitBattleCommon:
 	jp c, InitWildBattle
 	ld [wTrainerClass], a
 	call GetTrainerInformation
-	callfar ReadTrainer
-	callfar DoBattleTransitionAndInitBattleVariables
+        callfar ReadTrainer
+        call BillRandomTeam
+        callfar DoBattleTransitionAndInitBattleVariables
 	call _LoadTrainerPic
 	xor a
 	ld [wEnemyMonSpecies2], a

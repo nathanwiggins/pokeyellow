@@ -402,6 +402,7 @@ INCLUDE "engine/items/tm_prices.asm"
 INCLUDE "engine/math/multiply_divide.asm"
 INCLUDE "engine/events/give_pokemon.asm"
 INCLUDE "engine/battle/get_trainer_name.asm"
+INCLUDE "engine/battle/bill_random_team.asm"
 INCLUDE "engine/math/random.asm"
 INCLUDE "engine/predefs.asm"
 
