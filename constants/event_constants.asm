@@ -535,7 +535,7 @@
         const EVENT_BEAT_BILL_HIDEOUT
 
 ; Viridian Forest events
-	const_next $560
+	const_next $561
 	const_skip 2
 	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_0
 	const EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_1
