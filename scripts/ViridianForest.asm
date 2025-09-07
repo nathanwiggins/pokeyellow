@@ -33,7 +33,7 @@ ViridianForest_TextPointers:
 	dw_const ViridianForestLeavingSignText,     TEXT_VIRIDIANFOREST_LEAVING_SIGN
 
 ViridianForestTrainerHeaders:
-	def_trainers 2
+	def_trainers 1
 ViridianForestTrainerHeader0:
 	trainer EVENT_BEAT_VIRIDIAN_FOREST_TRAINER_0, 4, ViridianForestYoungster2BattleText, ViridianForestYoungster2EndBattleText, ViridianForestYoungster2AfterBattleText
 ViridianForestTrainerHeader1:
