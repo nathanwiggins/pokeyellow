@@ -15,6 +15,13 @@ BillsHideoutBillText:
         jr nz, .done
         ld hl, BillsHideoutBillBattleStartText
         call PrintText
+        call WaitForTextScrollButtonPress
+        ld de, .startBattle
+        push de
+        ldh a, [hLoadedROMBank]
+        push af
+        jp CloseTextDisplay
+.startBattle
         call StartBillBattle
 .done
         jp TextScriptEnd
