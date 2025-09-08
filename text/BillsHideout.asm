@@ -8,3 +8,13 @@ _BillsHideoutBillBattleStartText::
     text "Alright, let's do" 
     line "it then!"
     done
+
+_BillsHideoutBillWinText::
+    text "Wow! You're"
+    line "really strong!"
+    done
+
+_BillsHideoutBillLoseText::
+    text "Better luck"
+    line "next time!"
+    done
