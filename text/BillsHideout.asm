@@ -90,3 +90,9 @@ _BillsHideoutBillDeclinedText::
     line "catch you"
     cont "another time."
     done
+
+_BillsHideoutBillRematchText::
+    text "So, <PLAYER>, what"
+    line "do you say?"
+    cont "Want to battle?"
+    done
