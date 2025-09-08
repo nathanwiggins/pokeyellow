@@ -18,3 +18,9 @@ _BillsHideoutBillLoseText::
     text "Better luck"
     line "next time!"
     done
+
+_BillsHideoutBillDeclinedText::
+    text "No problem,"
+    line "catch you"
+    cont "another time."
+    done
