@@ -25,6 +25,11 @@ BillsHideoutEndBattleScript:
         res BIT_SEEN_BY_TRAINER, [hl]
         ld hl, wStatusFlags4
         res BIT_UNKNOWN_4_1, [hl]
+		ld a, [wBattleResult]
+        and a
+        jr nz, .loss
+        SetEvent EVENT_BEAT_BILL
+.loss
         call ResetButtonPressedAndMapScript
         ret
 
@@ -34,7 +39,13 @@ BillsHideout_TextPointers:
 
 BillsHideoutBillText:
         text_asm
+        CheckEvent EVENT_BEAT_BILL
+        jr z, .first_time
+        ld hl, BillsHideoutBillRematchText
+        jr .print_greeting
+.first_time
         ld hl, BillsHideoutBillGreetingText
+.print_greeting
         call PrintText
         call YesNoChoice
         ld a, [wCurrentMenuItem]
@@ -89,4 +100,8 @@ BillsHideoutBillLoseText:
 		
 BillsHideoutBillDeclinedText:
         text_far _BillsHideoutBillDeclinedText
+        text_end
+		
+BillsHideoutBillRematchText:
+        text_far _BillsHideoutBillRematchText
         text_end
