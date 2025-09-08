@@ -42,13 +42,6 @@ BillsHideoutBillText:
         jr nz, .declined
         ld hl, BillsHideoutBillBattleStartText
         call PrintText
-        call WaitForTextScrollButtonPress
-        ld de, .startBattle
-        push de
-        ldh a, [hLoadedROMBank]
-        push af
-        jp CloseTextDisplay
-.startBattle
         call StartBillBattle
         jp TextScriptEnd
 .declined
