@@ -61,5 +61,6 @@ ENDM
 	trainer_const LORELEI        ; $2C
 	trainer_const CHANNELER      ; $2D
 	trainer_const AGATHA         ; $2E
-	trainer_const LANCE          ; $2F
+        trainer_const LANCE          ; $2F
+        trainer_const BILL           ; $30
 DEF NUM_TRAINERS EQU const_value - 1

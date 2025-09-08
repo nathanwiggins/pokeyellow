@@ -35,8 +35,11 @@ InitBattleCommon:
 	jp c, InitWildBattle
 	ld [wTrainerClass], a
 	call GetTrainerInformation
-	callfar ReadTrainer
-	callfar DoBattleTransitionAndInitBattleVariables
+        callfar ReadTrainer
+        ld a, [wCurOpponent]
+        cp OPP_BILL
+        call z, BillRandomTeam
+        callfar DoBattleTransitionAndInitBattleVariables
 	call _LoadTrainerPic
 	xor a
 	ld [wEnemyMonSpecies2], a
@@ -148,7 +151,33 @@ _InitBattleCommon:
 	scf
 	ret
 .emptyString
-	db "@"
+        db "@"
+
+BillRandomTeam:
+        xor a
+        ld [wEnemyPartyCount], a
+        ld b, 3
+.loop
+        call Random
+        cp NUM_POKEMON
+        jr nc, .loop
+        inc a
+        ld [wPokedexNum], a
+        push bc
+        callfar PokedexToIndex
+        ld a, [wPokedexNum]
+        ld [wCurPartySpecies], a
+        pop bc
+        ld a, 100
+        ld [wCurEnemyLevel], a
+        ld a, ENEMY_PARTY_DATA
+        ld [wMonDataLocation], a
+        push bc
+        call AddPartyMon
+        pop bc
+        dec b
+        jr nz, .loop
+        ret
 
 _LoadTrainerPic:
 	ld a, [wTrainerPicPointer]
