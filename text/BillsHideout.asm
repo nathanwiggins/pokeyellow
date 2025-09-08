@@ -10,36 +10,42 @@ _BillsHideoutBillGreetingText::
 	cont "expected it too."
 
 	para "This place is"
-	line "RUIN VALLEY."
+	line "called RUIN"
+	cont "VALLEY."
 
 	para "It's said that"
 	line "MEW, the ancestor"
 	cont "of all #MON,"
 	cont "dwells within"
-	cont "the #MON TEMPLE."
+	cont "the #MON"
+	cont "TEMPLE here."
 
 	para "That's why I set"
-	line "up my hideout:"
-	cont "Hoping I'd find"
-	cont "it one day!"
+	line "up my hideout"
+	cont "here: Hoping"
+	cont "I'd find it"
+	cont "one day!"
 
 	para "But enough about"
 	line "me! Congrats on"
-	cont "beating the LEAGUE,"
-	cont "<PLAYER>!"
+	cont "beating the"
+	cont "LEAGUE, <PLAYER>!"
 
 	para "Y'know, the funny"
 	line "thing about"
-	cont "beating the LEAGUE"
-	cont "is..."
+	cont "beating the"
+	cont "LEAGUE is..."
 
 	para "Suddenly, there's"
 	line "no real challenge"
 	cont "left!"
 
 	para "But never fear,"
-	line "<PLAYER>! I'm the"
-	cont "#MON COLLECTOR!"
+	line "<PLAYER>!"
+	
+	para "I'm the #MON"
+	line "COLLECTOR,"
+	cont "remember?"
 
 	para "I've got myself"
 	line "a collection of"
@@ -48,10 +54,16 @@ _BillsHideoutBillGreetingText::
     cont "and I'm up for"
     cont "a battle anytime!"
 
+	para "To keep things"
+	line "interesting,"
+	cont "I'll even choose"
+	cont "a different team"
+	cont "every time!"
+	
 	para "I can promise"
 	line "you that no two"
 	cont "battles will ever"
-	cont "be alike."
+	cont "be alike!"
 
 	para "So, <PLAYER>, what"
 	line "do you say?"
