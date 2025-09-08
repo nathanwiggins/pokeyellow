@@ -26,7 +26,7 @@ BillsHideoutBillText:
         call YesNoChoice
         ld a, [wCurrentMenuItem]
         and a
-        jr nz, .done
+        jr nz, .declined
         ld hl, BillsHideoutBillBattleStartText
         call PrintText
         call WaitForTextScrollButtonPress
@@ -37,7 +37,10 @@ BillsHideoutBillText:
         jp CloseTextDisplay
 .startBattle
         call StartBillBattle
-.done
+        jp TextScriptEnd
+.declined
+        ld hl, BillsHideoutBillDeclinedText
+        call PrintText
         jp TextScriptEnd
 
 StartBillBattle:
@@ -77,4 +80,8 @@ BillsHideoutBillWinText:
 
 BillsHideoutBillLoseText:
         text_far _BillsHideoutBillLoseText
+        text_end
+
+BillsHideoutBillDeclinedText:
+        text_far _BillsHideoutBillDeclinedText
         text_end
