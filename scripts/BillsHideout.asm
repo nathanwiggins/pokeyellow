@@ -10,9 +10,22 @@ BillsHideout_Script:
 BillsHideout_ScriptPointers:
         def_script_pointers
         dw_const BillsHideoutDefaultScript, SCRIPT_BILLSHIDEOUT_DEFAULT
-        dw_const EndTrainerBattle,      SCRIPT_BILLSHIDEOUT_END_BATTLE
+        dw_const BillsHideoutEndBattleScript, SCRIPT_BILLSHIDEOUT_END_BATTLE
 
 BillsHideoutDefaultScript:
+        ret
+		
+BillsHideoutEndBattleScript:
+        ld hl, wCurrentMapScriptFlags
+        set BIT_CUR_MAP_LOADED_1, [hl]
+        set BIT_CUR_MAP_LOADED_2, [hl]
+        ld hl, wStatusFlags3
+        res BIT_PRINT_END_BATTLE_TEXT, [hl]
+        ld hl, wMiscFlags
+        res BIT_SEEN_BY_TRAINER, [hl]
+        ld hl, wStatusFlags4
+        res BIT_UNKNOWN_4_1, [hl]
+        call ResetButtonPressedAndMapScript
         ret
 
 BillsHideout_TextPointers:
@@ -63,7 +76,6 @@ StartBillBattle:
         ld [wJoyIgnore], a
         ld a, SCRIPT_BILLSHIDEOUT_END_BATTLE
         ld [wBillsHideoutCurScript], a
-        callfar InitBattle
         ret
 
 BillsHideoutBillGreetingText:
@@ -81,7 +93,7 @@ BillsHideoutBillWinText:
 BillsHideoutBillLoseText:
         text_far _BillsHideoutBillLoseText
         text_end
-
+		
 BillsHideoutBillDeclinedText:
         text_far _BillsHideoutBillDeclinedText
         text_end
