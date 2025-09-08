@@ -1,5 +1,19 @@
 BillsHideout_Script:
-        jp EnableAutoTextBoxDrawing
+        call EnableAutoTextBoxDrawing
+        ld hl, 0
+        ld de, BillsHideout_ScriptPointers
+        ld a, [wBillsHideoutCurScript]
+        call ExecuteCurMapScriptInTable
+        ld [wBillsHideoutCurScript], a
+        ret
+
+BillsHideout_ScriptPointers:
+        def_script_pointers
+        dw_const BillsHideoutDefaultScript, SCRIPT_BILLSHIDEOUT_DEFAULT
+        dw_const EndTrainerBattle,      SCRIPT_BILLSHIDEOUT_END_BATTLE
+
+BillsHideoutDefaultScript:
+        ret
 
 BillsHideout_TextPointers:
         def_text_pointers
@@ -29,10 +43,23 @@ BillsHideoutBillText:
 StartBillBattle:
         ld a, OPP_BILL
         ld [wCurOpponent], a
+        ld [wEnemyMonOrTrainerClass], a
         ld a, 1
         ld [wTrainerNo], a
         xor a
         ld [wLoneAttackNo], a
+        ld hl, BillsHideoutBillWinText
+        ld de, BillsHideoutBillLoseText
+        call SaveEndBattleTextPointers
+        ld hl, wStatusFlags3
+        set BIT_TALKED_TO_TRAINER, [hl]
+        set BIT_PRINT_END_BATTLE_TEXT, [hl]
+        ld hl, wStatusFlags4
+        set BIT_UNKNOWN_4_1, [hl]
+        xor a
+        ld [wJoyIgnore], a
+        ld a, SCRIPT_BILLSHIDEOUT_END_BATTLE
+        ld [wBillsHideoutCurScript], a
         callfar InitBattle
         ret
 
@@ -42,4 +69,12 @@ BillsHideoutBillGreetingText:
 
 BillsHideoutBillBattleStartText:
         text_far _BillsHideoutBillBattleStartText
+        text_end
+
+BillsHideoutBillWinText:
+        text_far _BillsHideoutBillWinText
+        text_end
+
+BillsHideoutBillLoseText:
+        text_far _BillsHideoutBillLoseText
         text_end
