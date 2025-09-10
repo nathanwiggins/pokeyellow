@@ -99,6 +99,12 @@ HallOfFameOakCongratulationsScript:
 	ld a, HS_CERULEAN_CAVE_GUY
 	ld [wMissableObjectIndex], a
 	predef HideObject
+	ld a, HS_BILL_1
+	ld [wMissableObjectIndex], a
+	predef HideObject
+	ld a, HS_BILL_2
+	ld [wMissableObjectIndex], a
+	predef HideObject
 	ld a, SCRIPT_HALLOFFAME_RESET_EVENTS_AND_SAVE
 	ld [wHallOfFameCurScript], a
 	ret
