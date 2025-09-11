@@ -256,8 +256,8 @@ LoadTownMap_Fly::
 	jr z, .pressedDown ; skip past unvisited towns
 	jp .townMapFlyLoop
 .wrapToEndOfList
-	ld hl, wFlyLocationsList + NUM_CITY_MAPS
-	jr .pressedDown
+        ld hl, wFlyLocationsList + NUM_CITY_MAPS + 1
+        jr .pressedDown
 
 ToText:
 	db "To@"
@@ -270,7 +270,7 @@ BuildFlyLocationsList:
 	ld e, a
 	ld a, [wTownVisitedFlag + 1]
 	ld d, a
-	lb bc, 0, NUM_CITY_MAPS
+        lb bc, 0, NUM_CITY_MAPS
 .loop
 	srl d
 	rr e
@@ -283,8 +283,20 @@ BuildFlyLocationsList:
 	inc b
 	dec c
 	jr nz, .loop
-	ld [hl], $ff
-	ret
+        ld a, [wEventFlags + EVENT_FLYPOINT_RUIN_VALLEY / 8]
+        bit EVENT_FLYPOINT_RUIN_VALLEY % 8, a
+        jr nz, .ruinValleyVisited
+        ld a, NOT_VISITED
+        ld [hl], a
+        inc hl
+        ld [hl], $ff
+        ret
+.ruinValleyVisited
+        ld a, RUIN_VALLEY
+        ld [hl], a
+        inc hl
+        ld [hl], $ff
+        ret
 
 TownMapUpArrow:
 	INCBIN "gfx/town_map/up_arrow.1bpp"

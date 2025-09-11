@@ -805,6 +805,9 @@ DEF INDIGO_PLATEAU_EVENTS_END EQU const_value - 1
         const_next $A05
         const EVENT_BEAT_BILL
 
+; Fly location events
+        const EVENT_FLYPOINT_RUIN_VALLEY
+
 ; End of events
-	const_next $A06
+        const_next $A07
 DEF NUM_EVENTS EQU const_value

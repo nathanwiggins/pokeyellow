@@ -7,8 +7,16 @@ MarkTownVisitedAndLoadMissableObjects::
 	ld hl, wTownVisitedFlag   ; mark town as visited (for flying)
 	predef FlagActionPredef
 .notInTown
-	ld hl, MapHSPointers
-	ld a, [wCurMap]
+        ld a, [wCurMap]
+        cp RUIN_VALLEY
+        jr nz, .skipRuinValleyFlag
+        ld c, EVENT_FLYPOINT_RUIN_VALLEY
+        ld b, FLAG_SET
+        ld hl, wEventFlags
+        predef FlagActionPredef
+.skipRuinValleyFlag
+        ld hl, MapHSPointers
+        ld a, [wCurMap]
 	ld b, $0
 	ld c, a
 	add hl, bc
