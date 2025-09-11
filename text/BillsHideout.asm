@@ -1,7 +1,7 @@
 _BillsHideoutBillGreetingText::
-	text "Well now! You"
-	line "actually found"
-	cont "me here,"
+	text "BILL: Well now!"
+	line "You actually"
+	cont "found me here,"
 	cont "<PLAYER>!"
 
 	para "I gotta say,"
@@ -43,8 +43,8 @@ _BillsHideoutBillGreetingText::
 	para "But never fear,"
 	line "<PLAYER>!"
 	
-	para "I'm the #MON"
-	line "COLLECTOR,"
+	para "I'm the"
+	line "#MANIAC,"
 	cont "remember?"
 
 	para "I've got myself"
