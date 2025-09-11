@@ -5,6 +5,6 @@ _PokeTempleSignText::
 	done
 
  _BillsHideoutSignText::
-	text "The #MON"
-	line "Collector"
+	text "Hideout:"
+	line "The #MANIAC"
 	done
