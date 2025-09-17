@@ -32,6 +32,7 @@ HiddenObjectMaps:
 	dbw VICTORY_ROAD_2F,              VictoryRoad2HiddenObjects
 	dbw ROUTE_25,                     Route25HiddenObjects
 	dbw BILLS_HOUSE,                  BillsHouseHiddenObjects
+	dbw BILLS_HIDEOUT,				  BillsHideoutHiddenObjects
 	dbw ROUTE_4,                      Route4HiddenObjects
 	dbw MT_MOON_POKECENTER,           MtMoonPokecenterHiddenObjects
 	dbw ROUTE_9,                      Route9HiddenObjects
@@ -251,6 +252,10 @@ Route25HiddenObjects:
 
 BillsHouseHiddenObjects:
 	hidden_object  1,  4, SPRITE_FACING_UP, BillsHousePC
+	db -1 ; end
+
+BillsHideoutHiddenObjects:
+	hidden_object  0,  1, SPRITE_FACING_UP, OpenPokemonCenterPC
 	db -1 ; end
 
 Route4HiddenObjects:
