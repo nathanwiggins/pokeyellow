@@ -1295,3 +1295,8 @@ INCLUDE "data/maps/headers/PokemonTemple.asm"
 INCLUDE "scripts/PokemonTemple.asm"
 INCLUDE "data/maps/objects/PokemonTemple.asm"
 PokemonTemple_Blocks: INCBIN "maps/PokemonTemple.blk"
+
+INCLUDE "data/maps/headers/BillsHideout.asm"
+INCLUDE "scripts/BillsHideout.asm"
+INCLUDE "data/maps/objects/BillsHideout.asm"
+BillsHideout_Blocks: INCBIN "maps/BillsHideout.blk"

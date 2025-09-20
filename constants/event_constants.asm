@@ -801,6 +801,10 @@ DEF INDIGO_PLATEAU_EVENTS_END EQU const_value - 1
 	const_next $A04
 	const EVENT_BEAT_MEW
 
+; Bill's Hideout events
+        const_next $A05
+        const EVENT_BEAT_BILL
+
 ; End of events
-	const_next $A05
+	const_next $A06
 DEF NUM_EVENTS EQU const_value
