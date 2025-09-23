@@ -1,5 +1,5 @@
 BrunosRoom_Script:
-	call BrunoShowOrHideExitBlock
+	call BrunosRoomShowOrHideExitBlock
 	call EnableAutoTextBoxDrawing
 	ld hl, BrunosRoomTrainerHeaders
 	ld de, BrunosRoom_ScriptPointers
@@ -8,7 +8,7 @@ BrunosRoom_Script:
 	ld [wBrunosRoomCurScript], a
 	ret
 
-BrunoShowOrHideExitBlock:
+BrunosRoomShowOrHideExitBlock:
 ; Blocks or clears the exit to the next room.
 	ld hl, wCurrentMapScriptFlags
 	bit BIT_CUR_MAP_LOADED_1, [hl]
@@ -25,7 +25,7 @@ BrunoShowOrHideExitBlock:
 	lb bc, 0, 2
 	predef_jump ReplaceTileBlock
 
-ResetBrunoScript:
+ResetBrunosRoomScript:
 	xor a ; SCRIPT_BRUNOSROOM_DEFAULT
 	ld [wBrunosRoomCurScript], a
 	ret
@@ -33,15 +33,15 @@ ResetBrunoScript:
 BrunosRoom_ScriptPointers:
 	def_script_pointers
 	dw_const BrunosRoomDefaultScript,               SCRIPT_BRUNOSROOM_DEFAULT
-	dw_const DisplayEnemyTrainerTextAndStartBattle, SCRIPT_BRUNOSROOM_BRUNO_START_BATTLE
-	dw_const BrunosRoomBrunoEndBattleScript,        SCRIPT_BRUNOSROOM_BRUNO_END_BATTLE
+	dw_const DisplayEnemyTrainerTextAndStartBattle, SCRIPT_BRUNOSROOM_BROCK_START_BATTLE
+	dw_const BrunosRoomBrockEndBattleScript,        SCRIPT_BRUNOSROOM_BROCK_END_BATTLE
 	dw_const BrunosRoomPlayerIsMovingScript,        SCRIPT_BRUNOSROOM_PLAYER_IS_MOVING
 	dw_const BrunosRoomNoopScript,                  SCRIPT_BRUNOSROOM_NOOP
 
 BrunosRoomNoopScript:
 	ret
 
-BrunoScriptWalkIntoRoom:
+BrunosRoomScriptWalkIntoRoom:
 ; Walk six steps upward.
 	ld hl, wSimulatedJoypadStatesEnd
 	ld a, PAD_UP
@@ -60,7 +60,7 @@ BrunoScriptWalkIntoRoom:
 	ret
 
 BrunosRoomDefaultScript:
-	ld hl, BrunoEntranceCoords
+	ld hl, BrunosRoomEntranceCoords
 	call ArePlayerCoordsInArray
 	jp nc, CheckFightingMapTrainers
 	xor a
@@ -72,9 +72,9 @@ BrunosRoomDefaultScript:
 	cp $3  ; Is player standing one tile above the exit?
 	jr c, .stopPlayerFromLeaving
 	CheckAndSetEvent EVENT_AUTOWALKED_INTO_BRUNOS_ROOM
-	jr z, BrunoScriptWalkIntoRoom
+	jr z, BrunosRoomScriptWalkIntoRoom
 .stopPlayerFromLeaving
-	ld a, TEXT_BRUNOSROOM_BRUNO_DONT_RUN_AWAY
+	ld a, TEXT_BRUNOSROOM_DONT_RUN_AWAY
 	ldh [hTextID], a
 	call DisplayTextID  ; "Don't run away!"
 	ld a, PAD_UP
@@ -87,7 +87,7 @@ BrunosRoomDefaultScript:
 	ld [wCurMapScript], a
 	ret
 
-BrunoEntranceCoords:
+BrunosRoomEntranceCoords:
 	dbmapcoord  4, 10
 	dbmapcoord  5, 10
 	dbmapcoord  4, 11
@@ -105,44 +105,44 @@ BrunosRoomPlayerIsMovingScript:
 	ld [wCurMapScript], a
 	ret
 
-BrunosRoomBrunoEndBattleScript:
+BrunosRoomBrockEndBattleScript:
 	call EndTrainerBattle
 	ld a, [wIsInBattle]
 	cp $ff
-	jp z, ResetBrunoScript
-	ld a, TEXT_BRUNOSROOM_BRUNO
+	jp z, ResetBrunosRoomScript
+	ld a, TEXT_BRUNOSROOM_BROCK
 	ldh [hTextID], a
 	jp DisplayTextID
 
 BrunosRoom_TextPointers:
 	def_text_pointers
-	dw_const BrunosRoomBrunoText,            TEXT_BRUNOSROOM_BRUNO
-	dw_const BrunosRoomBrunoDontRunAwayText, TEXT_BRUNOSROOM_BRUNO_DONT_RUN_AWAY
+	dw_const BrunosRoomBrockText,            TEXT_BRUNOSROOM_BROCK
+	dw_const BrunosRoomDontRunAwayText,      TEXT_BRUNOSROOM_DONT_RUN_AWAY
 
 BrunosRoomTrainerHeaders:
 	def_trainers
 BrunosRoomTrainerHeader0:
-	trainer EVENT_BEAT_BRUNOS_ROOM_TRAINER_0, 0, BrunoBeforeBattleText, BrunoEndBattleText, BrunoAfterBattleText
+	trainer EVENT_BEAT_BRUNOS_ROOM_TRAINER_0, 0, BrockBeforeBattleText, BrockEndBattleText, BrockAfterBattleText
 	db -1 ; end
 
-BrunosRoomBrunoText:
+BrunosRoomBrockText:
 	text_asm
 	ld hl, BrunosRoomTrainerHeader0
 	call TalkToTrainer
 	jp TextScriptEnd
 
-BrunoBeforeBattleText:
-	text_far _BrunoBeforeBattleText
+BrockBeforeBattleText:
+	text_far _BrunosRoomBrockBeforeBattleText
 	text_end
 
-BrunoEndBattleText:
-	text_far _BrunoEndBattleText
+BrockEndBattleText:
+	text_far _BrunosRoomBrockEndBattleText
 	text_end
 
-BrunoAfterBattleText:
-	text_far _BrunoAfterBattleText
+BrockAfterBattleText:
+	text_far _BrunosRoomBrockAfterBattleText
 	text_end
 
-BrunosRoomBrunoDontRunAwayText:
-	text_far _BrunosRoomBrunoDontRunAwayText
+BrunosRoomDontRunAwayText:
+	text_far _BrunosRoomDontRunAwayText
 	text_end
