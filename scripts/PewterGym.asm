@@ -21,7 +21,7 @@ PewterGym_Script:
 	db "PEWTER CITY@"
 
 .LeaderName:
-	db "BROCK@"
+	db "BRUNO@"
 
 PewterGymResetScripts:
 	xor a
@@ -35,9 +35,9 @@ PewterGym_ScriptPointers:
 	dw_const CheckFightingMapTrainers,              SCRIPT_PEWTERGYM_DEFAULT
 	dw_const DisplayEnemyTrainerTextAndStartBattle, SCRIPT_PEWTERGYM_START_BATTLE
 	dw_const EndTrainerBattle,                      SCRIPT_PEWTERGYM_END_BATTLE
-	dw_const PewterGymBrockPostBattle,              SCRIPT_PEWTERGYM_BROCK_POST_BATTLE
+	dw_const PewterGymBrunoPostBattle,              SCRIPT_PEWTERGYM_BRUNO_POST_BATTLE
 
-PewterGymBrockPostBattle:
+PewterGymBrunoPostBattle:
 	ld a, [wIsInBattle]
 	cp $ff
 	jp z, PewterGymResetScripts
@@ -45,7 +45,7 @@ PewterGymBrockPostBattle:
 	ld [wJoyIgnore], a
 ; fallthrough
 PewterGymScriptReceiveTM34:
-	ld a, TEXT_PEWTERGYM_BROCK_WAIT_TAKE_THIS
+	ld a, TEXT_PEWTERGYM_BRUNO_WAIT_TAKE_THIS
 	ldh [hTextID], a
 	call DisplayTextID
 	SetEvent EVENT_BEAT_BROCK
@@ -83,10 +83,10 @@ PewterGymScriptReceiveTM34:
 
 PewterGym_TextPointers:
 	def_text_pointers
-	dw_const PewterGymBrockText,             TEXT_PEWTERGYM_BROCK
+	dw_const PewterGymBrunoText,             TEXT_PEWTERGYM_BRUNO
 	dw_const PewterGymCooltrainerMText,      TEXT_PEWTERGYM_COOLTRAINER_M
 	dw_const PewterGymGuideText,             TEXT_PEWTERGYM_GYM_GUIDE
-	dw_const PewterGymBrockWaitTakeThisText, TEXT_PEWTERGYM_BROCK_WAIT_TAKE_THIS
+	dw_const PewterGymBrunoWaitTakeThisText, TEXT_PEWTERGYM_BRUNO_WAIT_TAKE_THIS
 	dw_const PewterGymReceivedTM34Text,      TEXT_PEWTERGYM_RECEIVED_TM34
 	dw_const PewterGymTM34NoRoomText,        TEXT_PEWTERGYM_TM34_NO_ROOM
 
@@ -96,7 +96,7 @@ PewterGymTrainerHeader0:
 	trainer EVENT_BEAT_PEWTER_GYM_TRAINER_0, 5, PewterGymCooltrainerMBattleText, PewterGymCooltrainerMEndBattleText, PewterGymCooltrainerMAfterBattleText
 	db -1 ; end
 
-PewterGymBrockText:
+PewterGymBrunoText:
 	text_asm
 	CheckEvent EVENT_BEAT_BROCK
 	jr z, .beforeBeat
@@ -115,8 +115,8 @@ PewterGymBrockText:
 	ld hl, wStatusFlags3
 	set BIT_TALKED_TO_TRAINER, [hl]
 	set BIT_PRINT_END_BATTLE_TEXT, [hl]
-	ld hl, PewterGymBrockReceivedBoulderBadgeText
-	ld de, PewterGymBrockReceivedBoulderBadgeText
+	ld hl, PewterGymBrunoReceivedBoulderBadgeText
+	ld de, PewterGymBrunoReceivedBoulderBadgeText
 	call SaveEndBattleTextPointers
 	ldh a, [hSpriteIndex]
 	ld [wSpriteIndex], a
@@ -126,22 +126,22 @@ PewterGymBrockText:
 	ld [wGymLeaderNo], a
 	xor a
 	ldh [hJoyHeld], a
-	ld a, SCRIPT_PEWTERGYM_BROCK_POST_BATTLE
+	ld a, SCRIPT_PEWTERGYM_BRUNO_POST_BATTLE
 	ld [wPewterGymCurScript], a
 	ld [wCurMapScript], a
 .done
 	jp TextScriptEnd
 
 .PreBattleText:
-	text_far _PewterGymBrockPreBattleText
+	text_far _PewterGymBrunoPreBattleText
 	text_end
 
 .PostBattleAdviceText:
-	text_far _PewterGymBrockPostBattleAdviceText
+	text_far _PewterGymBrunoPostBattleAdviceText
 	text_end
 
-PewterGymBrockWaitTakeThisText:
-	text_far _PewterGymBrockWaitTakeThisText
+PewterGymBrunoWaitTakeThisText:
+	text_far _PewterGymBrunoWaitTakeThisText
 	text_end
 
 PewterGymReceivedTM34Text:
@@ -154,10 +154,10 @@ PewterGymTM34NoRoomText:
 	text_far _PewterGymTM34NoRoomText
 	text_end
 
-PewterGymBrockReceivedBoulderBadgeText:
-	text_far _PewterGymBrockReceivedBoulderBadgeText
+PewterGymBrunoReceivedBoulderBadgeText:
+	text_far _PewterGymBrunoReceivedBoulderBadgeText
 	sound_get_item_1
-	text_far _PewterGymBrockBoulderBadgeInfoText ; Text to tell that the flash technique can be used
+	text_far _PewterGymBrunoBoulderBadgeInfoText ; Text to tell that the flash technique can be used
 	text_end
 
 PewterGymCooltrainerMText:

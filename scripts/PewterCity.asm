@@ -127,7 +127,7 @@ PewterCityYoungsterShowsPlayerGymScript:
 	call PlayDefaultMusic
 	ld hl, wMiscFlags
 	set BIT_NO_SPRITE_UPDATES, [hl]
-	ld a, TEXT_PEWTERCITY_YOUNGSTER_GO_TAKE_ON_BROCK
+	ld a, TEXT_PEWTERCITY_YOUNGSTER_GO_TAKE_ON_BRUNO
 	ldh [hTextID], a
 	call DisplayTextID
 	ld a, $3c
@@ -196,7 +196,7 @@ PewterCity_TextPointers:
 	dw_const PewterCityGymSignText,                TEXT_PEWTERCITY_GYM_SIGN
 	dw_const PewterCitySignText,                   TEXT_PEWTERCITY_SIGN
 	dw_const PewterCitySuperNerd1ItsRightHereText, TEXT_PEWTERCITY_SUPER_NERD1_ITS_RIGHT_HERE
-	dw_const PewterCityYoungsterGoTakeOnBrockText, TEXT_PEWTERCITY_YOUNGSTER_GO_TAKE_ON_BROCK
+	dw_const PewterCityYoungsterGoTakeOnBrunoText, TEXT_PEWTERCITY_YOUNGSTER_GO_TAKE_ON_BRUNO
 
 PewterCityCooltrainerFText:
 	text_far _PewterCityCooltrainerFText
@@ -303,8 +303,8 @@ PewterCityYoungsterText:
 	text_far _PewterCityYoungsterYoureATrainerFollowMeText
 	text_end
 
-PewterCityYoungsterGoTakeOnBrockText:
-	text_far _PewterCityYoungsterGoTakeOnBrockText
+PewterCityYoungsterGoTakeOnBrunoText:
+	text_far _PewterCityYoungsterGoTakeOnBrunoText
 	text_end
 
 PewterCityTrainerTipsText:

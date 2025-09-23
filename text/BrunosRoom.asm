@@ -1,37 +1,34 @@
-_BrunoBeforeBattleText::
-	text "I am BRUNO of"
-	line "the ELITE FOUR!"
+_BrunosRoomBrockBeforeBattleText::
+       text "I'm BROCK!"
+       line "Once PEWTER's GYM"
+       cont "LEADER, now an"
+       cont "ELITE FOUR member!"
 
-	para "Through rigorous"
-	line "training, people"
-	cont "and #MON can"
-	cont "become stronger!"
+       para "I've hardened my"
+       line "#MON and myself"
+       cont "through intense"
+       cont "training!"
 
-	para "I've weight"
-	line "trained with"
-	cont "my #MON!"
+       para "Show me your best"
+       line "so I can see if"
+       cont "you belong here!"
+       done
 
-	para "<PLAYER>!"
+_BrunosRoomBrockEndBattleText::
+       text "Your skills"
+       line "outmatched mine!"
+       prompt
 
-	para "We will grind you"
-	line "down with our"
-	cont "superior power!"
+_BrunosRoomBrockAfterBattleText::
+       text "You've earned"
+       line "my respect!"
 
-	para "Hoo hah!"
-	done
+       para "Advance and face"
+       line "your next"
+       cont "challenge!"
+       done
 
-_BrunoEndBattleText::
-	text "Why?"
-	line "How could I lose?"
-	prompt
-
-_BrunoAfterBattleText::
-	text "My job is done!"
-	line "Go face your next"
-	cont "challenge!"
-	done
-
-_BrunosRoomBrunoDontRunAwayText::
-	text "Someone's voice:"
-	line "Don't run away!"
-	done
+_BrunosRoomDontRunAwayText::
+       text "Someone's voice:"
+       line "Don't run away!"
+       done

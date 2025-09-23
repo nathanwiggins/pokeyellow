@@ -16,7 +16,7 @@ _PewterCityCooltrainerMText::
 	para "They're all like"
 	line "BUG CATCHERs,"
 	cont "but PEWTER GYM's"
-	cont "BROCK is totally"
+	cont "BRUNO is totally"
 	cont "into it!"
 	done
 
@@ -64,16 +64,16 @@ _PewterCitySuperNerd2ImSprayingRepelText::
 
 _PewterCityYoungsterYoureATrainerFollowMeText::
 	text "You're a trainer"
-	line "right? BROCK's"
+	line "right? BRUNO's"
 	cont "looking for new"
 	cont "challengers!"
 	cont "Follow me!"
 	done
 
-_PewterCityYoungsterGoTakeOnBrockText::
+_PewterCityYoungsterGoTakeOnBrunoText::
 	text "If you have the"
 	line "right stuff, go"
-	cont "take on BROCK!"
+	cont "take on BRUNO!"
 	done
 
 _PewterCityTrainerTipsText::
@@ -104,7 +104,7 @@ _PewterCityMuseumSignText::
 _PewterCityGymSignText::
 	text "PEWTER CITY"
 	line "#MON GYM"
-	cont "LEADER: BROCK"
+	cont "LEADER: BRUNO"
 
 	para "The Rock Solid"
 	line "#MON Trainer!"
