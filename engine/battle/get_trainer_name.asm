@@ -9,8 +9,14 @@ GetTrainerName_::
 	jr z, .foundName
 	cp RIVAL2
 	jr z, .foundName
-	cp RIVAL3
+	cp AGATHA
+	jr nz, .loadTrainerName
+	ld b, a
+	ld a, [wCurMap]
+	cp VIRIDIAN_GYM
 	jr z, .foundName
+	ld a, b
+.loadTrainerName
 	ld [wNameListIndex], a
 	ld a, TRAINER_NAME
 	ld [wNameListType], a
