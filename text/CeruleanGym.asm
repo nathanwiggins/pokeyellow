@@ -3,7 +3,7 @@ _CeruleanGymMistyPreBattleText::
 	line "CERULEAN GYM."
 
 	para "I am LORELEI,"
-	line "Cerulean's icy"
+	line "CERULEAN's icy"
 	cont "GYM LEADER."
 
 	para "No one can best"
@@ -130,8 +130,8 @@ _CeruleanGymGymGuideChampInMakingText::
 	cont "hot passion!"
 
 	para "But beware of the"
-	line "other water #MON"
-	cont "in this GYM!"
+	line "other water"
+	cont "#MON!"
 	done
 
 _CeruleanGymGymGuideBeatMistyText::
