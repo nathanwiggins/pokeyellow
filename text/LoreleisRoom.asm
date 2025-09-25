@@ -31,7 +31,7 @@ _LoreleisRoomLoreleiBeforeBattleText::
 
 	para "When it hits, it"
 	line "shakes you to"
-	cont "your very core."
+	cont "your very core!"
 
 	para "That's the power"
 	line "you face now!"
