@@ -18,8 +18,9 @@ _AgathaBeforeBattleText::
 	cont "past, but now..."
 
 	para "This time, you'll"
-	line "regret ever getting"
-	cont "in my way!"
+	line "regret ever"
+	cont "getting in"
+	cont "my way!"
 
     para "It's time for"
     line "TEAM ROCKET to"
