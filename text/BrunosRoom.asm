@@ -19,11 +19,12 @@ _BrunoBeforeBattleText::
 	cont "to break through?"
 
 	para "This is no easy"
-	line "test—only the best"
-	cont "will prevail now."
+	line "test! Only the"
+	cont "best will"
+	cont "prevail now!"
 
 	para "Fine then! Show"
-	cont "me your best!"
+	line "me your best!"
 	done
 
 _BrunoEndBattleText::
@@ -34,8 +35,9 @@ _BrunoEndBattleText::
 _BrunoAfterBattleText::
 	text "Your strength"
 	line "is impressive..."
-	cont "Go face your next"
-	cont "challenge!"
+
+	para "Go face your next"
+	line "challenge!"
 	done
 
 _BrunosRoomBrunoDontRunAwayText::
