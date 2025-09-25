@@ -1,33 +1,40 @@
 _BrunoBeforeBattleText::
-	text "I am BRUNO of"
-	line "the ELITE FOUR!"
+	text "I'm BROCK!"
+	line "Your next test!"
 
-	para "Through rigorous"
-	line "training, people"
-	cont "and #MON can"
-	cont "become stronger!"
+	para "I've been looking"
+	line "for a new"
+	cont "challenge..."
 
-	para "I've weight"
-	line "trained with"
-	cont "my #MON!"
+	para "Rocks endure time,"
+	line "weather, and even"
+	cont "the strongest foe."
 
-	para "<PLAYER>!"
+	para "I believe in rock"
+	line "hard defense and"
+	cont "determination!"
 
-	para "We will grind you"
-	line "down with our"
-	cont "superior power!"
+	para "Do you have"
+	line "what it takes"
+	cont "to break through?"
 
-	para "Hoo hah!"
+	para "This is no easy"
+	line "test—only the best"
+	cont "will prevail now."
+
+	para "Fine then! Show"
+	cont "me your best!"
 	done
 
 _BrunoEndBattleText::
-	text "Why?"
-	line "How could I lose?"
+	text "I took"
+	line "you for granted!"
 	prompt
 
 _BrunoAfterBattleText::
-	text "My job is done!"
-	line "Go face your next"
+	text "Your strength"
+	line "is impressive..."
+	cont "Go face your next"
 	cont "challenge!"
 	done
 
