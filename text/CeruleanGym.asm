@@ -1,50 +1,56 @@
 _CeruleanGymMistyPreBattleText::
-	text "Hi, you're a new"
-	line "face!"
+	text "Welcome to the"
+	line "CERULEAN GYM."
 
-	para "What's your policy"
-	line "on #MON? What"
-	cont "is your approach?"
+	para "I am LORELEI,"
+	line "Cerulean's icy"
+	cont "GYM LEADER."
 
-	para "My policy is an"
-	line "all-out offensive"
-	cont "with water-type"
-	cont "#MON!"
+	para "No one can best"
+	line "me when it comes"
+	cont "to icy #MON!"
 
-	para "MISTY, the world-"
-	line "famous beauty, is"
-	cont "your host!"
+	para "Freezing moves"
+	line "are powerful!"
 
-	para "Are you ready,"
-	line "sweetie?"
+	para "Your #MON will"
+	line "be at my mercy"
+	cont "when they are"
+	cont "frozen solid!"
+
+	para "Hahaha!"
+	line "Are you ready?"
 	done
 
 _CeruleanGymMistyTM11ExplanationText::
 	text "TM11 teaches"
 	line "BUBBLEBEAM!"
 
-	para "Use it on an"
-	line "aquatic #MON!"
+	para "Water is"
+	line "powerful, even"
+	cont "when it isn't"
+	cont "frozen!"
 	done
 
 _CeruleanGymMistyCascadeBadgeInfoText::
 	text "The CASCADEBADGE"
 	line "makes all #MON"
-	cont "up to L30 obey!"
+	cont "up to L30 obey."
 
 	para "That includes"
-	line "even outsiders!"
+	line "even outsiders."
 
-	para "There's more, you"
-	line "can now use CUT"
-	cont "anytime!"
+	para "It also lets you"
+	line "use CUT whenever"
+	cont "you need it."
 
-	para "You can CUT down"
+	para "Slice through"
 	line "small bushes to"
-	cont "open new paths!"
+	cont "clear the way."
 
-	para "You can also have"
-	line "my favorite TM!"
+	para "Accept this TM;"
+	line "its flow suits"
+	cont "my style."
 	done
 
 _CeruleanGymMistyReceivedTM11Text::
@@ -65,14 +71,15 @@ _CeruleanGymMistyReceivedCascadeBadgeText::
 
 	para "You can have the"
 	line "CASCADEBADGE to"
-	cont "show you beat me!"
+	cont "acknowledge your"
+	cont "strength!"
 	prompt
 
 _CeruleanGymBattleText1::
 	text "I'm more than good"
 	line "enough for you!"
 
-	para "MISTY can wait!"
+	para "LORELEI can wait!"
 	done
 
 _CeruleanGymEndBattleText1::
@@ -100,7 +107,7 @@ _CeruleanGymEndBattleText2::
 	prompt
 
 _CeruleanGymAfterBattleText2::
-	text "MISTY is going to"
+	text "LORELEI will"
 	line "keep improving!"
 
 	para "She won't lose to"
@@ -113,20 +120,22 @@ _CeruleanGymGymGuideChampInMakingText::
 
 	para "Here's my advice!"
 
-	para "The LEADER, MISTY,"
-	line "is a pro who uses"
-	cont "water #MON!"
+	para "The LEADER,"
+	line "LORELEI, keeps"
+	cont "icy calm with"
+	cont "freezing #MON!"
 
-	para "You can drain all"
-	line "their water with"
-	cont "plant #MON!"
+	para "You can melt all"
+	line "her ice with"
+	cont "hot passion!"
 
-	para "Or, zap them with"
-	line "electricity!"
+	para "But beware of the"
+	line "other water #MON"
+	cont "in this GYM!"
 	done
 
 _CeruleanGymGymGuideBeatMistyText::
-	text "You beat MISTY!"
+	text "You beat LORELEI!"
 	line "What'd I tell ya?"
 
 	para "You and me, kid,"
