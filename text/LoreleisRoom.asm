@@ -15,7 +15,7 @@ _LoreleisRoomLoreleiBeforeBattleText::
 
 	para "Now here I am,"
 	line "standing proud as"
-	cont "a new member of t"
+	cont "a new member of"
 	cont "the ELITE FOUR!"
 
 	para "My policy is an"
