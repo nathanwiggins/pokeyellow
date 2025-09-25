@@ -31,8 +31,8 @@ _ViridianGymGiovanniPreBattleText::
 	done
 
 _ViridianGymGiovanniReceivedEarthBadgeText::
-	text "Tch! Guess you"
-	line "managed it!"
+	text "Tch! Guess"
+	line "you managed it!"
 	cont "Fine, take the"
 	cont "EARTHBADGE!@"
 	text_end
