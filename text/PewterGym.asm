@@ -33,8 +33,10 @@ _PewterGymBrockPostBattleAdviceText::
 	para "I forge both"
 	line "with training!"
 
-	para "Keep pushing!"
-	line "Hoo hah!"
+	para "My job is done!"
+	line "Go face your next"
+	cont "challenge!"
+	cont "Hoo hah!"
 	done
 
 _PewterGymBrockWaitTakeThisText::
