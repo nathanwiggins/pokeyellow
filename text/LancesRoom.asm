@@ -33,7 +33,7 @@ _LancesRoomLanceEndBattleText::
 	line "#MON master!"
 	prompt
 
-_LancesRoomLanceEndBattleText::
+_LancesRoomLanceAfterBattleText::
 	text "<PLAYER>!"
 	line "Your skills are"
 	cont "impressive! I am"
