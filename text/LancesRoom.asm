@@ -1,4 +1,4 @@
-_LanceBeforeBattleText::
+_LancesRoomLanceBeforeBattleText::
 	text "Ah! I knew you"
 	line "would make it!"
 
@@ -26,14 +26,14 @@ _LanceBeforeBattleText::
 	cont "in the world!"
 	done
 
-_LanceEndBattleText::
+_LancesRoomLanceEndBattleText::
 	text "That's it!"
 
 	para "You are a"
 	line "#MON master!"
 	prompt
 
-_LanceAfterBattleText::
+_LancesRoomLanceEndBattleText::
 	text "<PLAYER>!"
 	line "Your skills are"
 	cont "impressive! I am"
