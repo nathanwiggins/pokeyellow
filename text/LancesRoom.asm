@@ -27,7 +27,8 @@ _LancesRoomLanceBeforeBattleText::
 	done
 
 _LancesRoomLanceEndBattleText::
-	text "That's it!"
+	text "That's"
+	line "it!
 
 	para "You are a"
 	line "#MON master!"
