@@ -51,9 +51,6 @@ _LancesRoomLanceAfterBattleText::
 	cont "His name is..."
 
 	para "LANCE!"
-	line "He is the most"
-	cont "powerful trainer"
-	cont "in KANTO!"
 
 	para "He is the"
 	line "#MON LEAGUE"
