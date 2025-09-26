@@ -1,64 +1,60 @@
-_LancesRoomLanceBeforeBattleText::
-	text "Ah! I heard about"
-	line "you, <PLAYER>!"
+_LanceBeforeBattleText::
+	text "Ah! I knew you"
+	line "would make it!"
 
-	para "I lead the ELITE"
-	line "FOUR! You can"
-	cont "call me LANCE the"
-	cont "dragon trainer!"
+	para "I am proud of"
+	line "you, <PLAYER>."
 
-	para "You know that"
-	line "dragons are"
-	cont "mythical #MON!"
+	para "I see you have"
+	line "made it far in"
+	cont "your quest to"
+	cont "become a champion!"
 
-	para "They're hard to"
-	line "catch and raise,"
-	cont "but their powers"
-	cont "are superior!"
+	para "People think of"
+	line "me as just a"
+	cont "researcher."
 
-	para "They're virtually"
-	line "indestructible!"
+	para "But today I will"
+	line "show you that I"
+	cont "am much more than"
+	cont "that!"
 
-	para "Well, are you"
-	line "ready to lose?"
-
-	para "Your LEAGUE"
-	line "challenge ends"
-	cont "with me, <PLAYER>!"
+	para "Allow me to"
+	line "demonstrate why I"
+	cont "am considered the"
+	cont "greatest PROF"
+	cont "in the world!"
 	done
 
-_LancesRoomLanceEndBattleText::
+_LanceEndBattleText::
 	text "That's it!"
 
-	para "I hate to admit"
-	line "it, but you are a"
-	cont "#MON master!"
+	para "You are a"
+	line "#MON master!"
 	prompt
 
-_LancesRoomLanceAfterBattleText::
-	text "I still can't"
-	line "believe my"
-	cont "dragons lost to"
-	cont "you, <PLAYER>!"
+_LanceAfterBattleText::
+	text "<PLAYER>!"
+	line "Your skills are"
+	cont "impressive! I am"
+	cont "amazed!"
 
-	para "You are now the"
-	line "#MON LEAGUE"
-	cont "champion!"
-
-	para "...Or, you would"
-	line "have been, but"
-	cont "you have one more"
-	cont "challenge ahead."
+	para "But..."
+	line "you have one more"
+	cont "challenge ahead,"
+	cont "and it's not"
+	cont "an easy one..."
 
 	para "You have to face"
-	line "another trainer!"
+	line "another trainer."
 	cont "His name is..."
 
-	para "<RIVAL>!"
-	line "He beat the ELITE"
-	cont "FOUR before you!"
+	para "LANCE!"
+	line "He is the most"
+	cont "powerful trainer"
+	cont "in KANTO!"
 
-	para "He is the real"
+	para "He is the"
 	line "#MON LEAGUE"
 	cont "champion!@"
 	text_end
