@@ -51,8 +51,8 @@ _LoreleisRoomLoreleiAfterBattleText::
 
 	para "Maybe you have"
 	line "a chance against"
-	cont "the LEAGUE's"
-	cont "power!"
+	cont "the LEAGUE"
+	cont "after all!"
 	done
 
 _LoreleisRoomLoreleiDontRunAwayText::
