@@ -100,7 +100,8 @@ _ChampionsRoomOakDisappointedWithRivalText::
 	para "your skills in"
 	line "battle, and my"
 	cont "passion for"
-	cont "collectin #MON!"
+	cont "collecting"
+	cont "#MON!"
 	done
 
 _ChampionsRoomOakComeWithMeText::
