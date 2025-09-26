@@ -28,10 +28,10 @@ _LancesRoomLanceBeforeBattleText::
 
 _LancesRoomLanceEndBattleText::
 	text "That's"
-	line "it!
+	line "it!"
 
-	para "You are a"
-	line "#MON master!"
+	para "You beat"
+	line "the PROF!"
 	prompt
 
 _LancesRoomLanceAfterBattleText::
