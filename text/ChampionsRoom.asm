@@ -26,7 +26,7 @@ _ChampionsRoomRivalIntroText::
 	cont "are superior!"
 
 	para "Much like you"
-	link "and I..."
+	line "and I..."
 
 	para "I'm looking forward"
 	line "to this challenge,"
