@@ -1,4 +1,4 @@
-_GaryChampionIntroText::
+_ChampionsRoomRivalIntroText::
 	text "Ah! I've heard"
 	line "about you,"
 	cont "<PLAYER>!"
@@ -40,21 +40,21 @@ _GaryChampionIntroText::
 	line "echo through time!"
 	done
 
-_GaryDefeatedText::
+_RivalDefeatedText::
 	text "You did it!"
 
 	para "You are a"
 	line "#MON master!"
 	prompt
 
-_GaryVictoryText::
+_RivalVictoryText::
 	text "Well played."
 	line "You have room"
 	cont "to grow, though"
 	cont "<PLAYER>."
 	prompt
 
-_GaryText_76103::
+_ChampionsRoomRivalAfterBattleText::
 	text "<PLAYER>, this"
 	line "is a special"
 	cont "moment."
@@ -69,11 +69,11 @@ _GaryText_76103::
 	cont "champion!"
 	done
 
-_GaryText2::
+_ChampionsRoomOakText::
 	text "OAK: <PLAYER>!"
 	done
 
-_GaryText_76120::
+_ChampionsRoomOakCongratulatesPlayerText::
 	text "OAK: So, you won!"
 	line "Congratulations!"
 	cont "You're the new"
@@ -91,7 +91,7 @@ _GaryText_76120::
 	line "come of age!"
 	done
 
-_GaryText_76125::
+_ChampionsRoomOakDisappointedWithRivalText::
 	text "OAK: LANCE! I"
 	line "think we have"
 	cont "finally found"
@@ -103,7 +103,7 @@ _GaryText_76125::
 	cont "collectin #MON!"
 	done
 
-_GaryText_7612a::
+_ChampionsRoomOakComeWithMeText::
 	text "OAK: <PLAYER>!"
 
 	para "You understand"
