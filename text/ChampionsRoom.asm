@@ -1,91 +1,79 @@
-_ChampionsRoomRivalIntroText::
-	text "<RIVAL>: Hey!"
+_GaryChampionIntroText::
+	text "Ah! I've heard"
+	line "about you,"
+	cont "<PLAYER>!"
 
-	para "I was looking"
-	line "forward to seeing"
-	cont "you, <PLAYER>!"
+	para "It is an honor"
+	line "to meet such"
+	cont "a masterful"
+	cont "trainer in"
+	cont "person!"
 
-	para "My rival should"
-	line "be strong to keep"
-	cont "me sharp!"
+	para "I lead the ELITE"
+	line "FOUR! My name"
+	cont "is LANCE the"
+	cont "Master of"
+	cont "the Skies!"
 
-	para "While working on"
-	line "#DEX, I looked"
-	cont "all over for"
-	cont "powerful #MON!"
+	para "There are many"
+	line "legendary #MON"
+	cont "out there,"
+	cont "<PLAYER>."
 
-	para "Not only that, I"
-	line "assembled teams"
-	cont "that would beat"
-	cont "any #MON type!"
+	para "They're hard to"
+	line "catch and raise,"
+	cont "but their powers"
+	cont "are superior!"
 
-	para "And now!"
+	para "Much like you"
+	link "and I..."
 
-	para "I'm the #MON"
-	line "LEAGUE champion!"
+	para "I'm looking forward"
+	line "to this challenge,"
+	cont "<PLAYER>!"
 
-	para "<PLAYER>! Do you"
-	line "know what that"
-	cont "means?"
+	para "Come!"
+	line "The summit of"
+	cont "the LEAGUE awaits!"
 
-	para "I'll tell you!"
-
-	para "I am the most"
-	line "powerful trainer"
-	cont "in the world!"
+	para "Let our clash"
+	line "echo through time!"
 	done
 
-_RivalDefeatedText::
-	text "NO!"
-	line "That can't be!"
-	cont "You beat my best!"
+_GaryDefeatedText::
+	text "You did it!"
 
-	para "After all that"
-	line "work to become"
-	cont "LEAGUE champ?"
-
-	para "My reign is over"
-	line "already?"
-	cont "It's not fair!"
+	para "You are a"
+	line "#MON master!"
 	prompt
 
-_RivalVictoryText::
-	text "Hahaha!"
-	line "I won, I won!"
-
-	para "I'm too good for"
-	line "you, <PLAYER>!"
-
-	para "You did well to"
-	line "even reach me,"
-	cont "<RIVAL>, the"
-	cont "#MON genius!"
-
-	para "Nice try, loser!"
-	line "Hahaha!"
+_GaryVictoryText::
+	text "Well played."
+	line "You have room"
+	cont "to grow, though"
+	cont "<PLAYER>."
 	prompt
 
-_ChampionsRoomRivalAfterBattleText::
-	text "Why?"
-	line "Why did I lose?"
+_GaryText_76103::
+	text "<PLAYER>, this"
+	line "is a special"
+	cont "moment."
 
-	para "I never made any"
-	line "mistakes raising"
-	cont "my #MON..."
+	para "I am honored"
+	line "to have competed"
+	cont "against a true"
+	cont "master!"
 
-	para "Darn it! You're"
-	line "the new #MON"
-	cont "LEAGUE champion!"
-
-	para "Although I don't"
-	line "like to admit it."
+	para "You are now the"
+	line "#MON LEAGUE"
+	cont "champion!"
 	done
 
-_ChampionsRoomOakText::
+_GaryText2::
 	text "OAK: <PLAYER>!"
 	done
 
-_ChampionsRoomOakCongratulatesPlayerText::
+_GaryText_76120::
 	text "OAK: So, you won!"
 	line "Congratulations!"
 	cont "You're the new"
@@ -96,40 +84,26 @@ _ChampionsRoomOakCongratulatesPlayerText::
 	line "much since you"
 	cont "first left with"
 	cont "@"
-	text_ram wNameBuffer
+	text_ram wcd6d
 	text "!"
 
 	para "<PLAYER>, you have"
 	line "come of age!"
 	done
 
-_ChampionsRoomOakDisappointedWithRivalText::
-	text "OAK: <RIVAL>! I'm"
-	line "disappointed!"
+_GaryText_76125::
+	text "OAK: LANCE! I"
+	line "think we have"
+	cont "finally found"
+	cont "a trainer with"
 
-	para "I came when I"
-	line "heard you beat"
-	cont "the ELITE FOUR!"
-
-	para "But, when I got"
-	line "here, you had"
-	cont "already lost!"
-
-	para "<RIVAL>! Do you"
-	line "understand why"
-	cont "you lost?"
-
-	para "You have forgotten"
-	line "to treat your"
-	cont "#MON with"
-	cont "trust and love!"
-
-	para "Without them, you"
-	line "will never become"
-	cont "a champ again!"
+	para "your skills in"
+	line "battle, and my"
+	cont "passion for"
+	cont "collectin #MON!"
 	done
 
-_ChampionsRoomOakComeWithMeText::
+_GaryText_7612a::
 	text "OAK: <PLAYER>!"
 
 	para "You understand"
