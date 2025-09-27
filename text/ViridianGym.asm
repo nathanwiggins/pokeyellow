@@ -1,46 +1,52 @@
 _ViridianGymGiovanniPreBattleText::
-	text "Fwahahaha! This is"
-	line "my hideout!"
+	text "Well, <PLAYER>!"
+	line "Surprised to see"
+	cont "me in charge?"
 
-	para "I planned to"
-	line "resurrect TEAM"
-	cont "ROCKET here!"
+	para "After tearing"
+	line "through trainers"
+	cont "all over, I came"
+	cont "back near home."
 
-	para "But, you have"
-	line "caught me again!"
-	cont "So be it! This"
-	cont "time, I'm not"
-	cont "holding back!"
+	para "Being out in the"
+	line "field taught me"
+	cont "more than any"
+	cont "GYM could!"
 
-	para "Once more, you"
-	line "shall face"
-	cont "GIOVANNI, the"
-	cont "greatest trainer!"
+	para "Now I'm the final"
+	line "GYM LEADER, the"
+	cont "strongest of all!"
+
+	para "No one will ever"
+	line "dethrone me!"
+	cont "Not even you!"
+
+	para "It all comes"
+	line "full circle here,"
+	cont "<PLAYER>."
+
+	para "Come on!"
+	line "Let's do this,"
+	cont "one final time!"
 	done
 
 _ViridianGymGiovanniReceivedEarthBadgeText::
-	text "Ha!"
-	line "That was a truly"
-	cont "intense fight!"
-	cont "You have won!"
-	cont "As proof, here is"
-	cont "the EARTHBADGE!@"
+	text "Tch! Guess"
+	line "you managed it!"
+	cont "Fine, take the"
+	cont "EARTHBADGE!@"
 	text_end
 
 _ViridianGymGiovanniPostBattleAdviceText::
-	text "Having lost, I"
-	line "cannot face my"
-	cont "underlings!"
-	cont "TEAM ROCKET is"
-	cont "finished forever!"
+	text "Enjoy it while"
+	line "it lasts!"
 
-	para "I will dedicate my"
-	line "life to the study"
-	cont "of #MON!"
+	para "I'm heading back"
+	line "out to sharpen"
+	cont "what I learned"
+	cont "in the field!"
 
-	para "Let us meet again"
-	line "someday!"
-	cont "Farewell!@"
+	para "Smell ya!@"
 	text_end
 
 _ViridianGymGiovanniEarthBadgeInfoText::
@@ -48,17 +54,13 @@ _ViridianGymGiovanniEarthBadgeInfoText::
 	line "makes #MON of"
 	cont "any level obey!"
 
-	para "It is evidence of"
-	line "your mastery as a"
-	cont "#MON trainer!"
-
 	para "With it, you can"
 	line "enter the #MON"
 	cont "LEAGUE!"
 
-	para "It is my gift for"
-	line "your #MON"
-	cont "LEAGUE challenge!"
+	para "Better be ready"
+	line "for trainers"
+	cont "in the LEAGUE!"
 	done
 
 _ViridianGymGiovanniReceivedTM27Text::
@@ -73,10 +75,6 @@ _ViridianGymGiovanniTM27ExplanationText::
 	line "It will take out"
 	cont "#MON with just"
 	cont "one hit!"
-
-	para "I made it when I"
-	line "ran the GYM here,"
-	cont "too long ago..."
 	done
 
 _ViridianGymGiovanniTM27NoRoomText::
@@ -229,12 +227,12 @@ _ViridianGymGuidePreBattleText::
 
 	para "I heard that the"
 	line "trainers here"
-	cont "like ground-type"
+	cont "like all type"
 	cont "#MON!"
 	done
 
 _ViridianGymGuidePostBattleText::
 	text "Blow me away!"
-	line "GIOVANNI was the"
+	line "<RIVAL> was the"
 	cont "GYM LEADER here?"
 	done

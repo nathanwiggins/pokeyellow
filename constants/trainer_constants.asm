@@ -64,3 +64,5 @@ ENDM
         trainer_const LANCE          ; $2F
         trainer_const BILL           ; $30
 DEF NUM_TRAINERS EQU const_value - 1
+
+DEF MAX_ELITE_FOUR_LEVEL_BONUS EQU 40

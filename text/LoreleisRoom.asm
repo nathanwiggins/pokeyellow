@@ -1,39 +1,58 @@
 _LoreleisRoomLoreleiBeforeBattleText::
-	text "Welcome to"
-	line "#MON LEAGUE!"
+    text "Hiya! I'm Misty!"
+	line "You're a new"
+	cont "face!"
 
-	para "I am LORELEI of"
-	line "the ELITE FOUR!"
+	para "I used to be the"
+	line "CERULEAN GYM"
+	cont "LEADER, remember?"
 
-	para "No one can best"
-	line "me when it comes"
-	cont "to icy #MON!"
+	para "Back then I was"
+	line "a young girl with"
+	cont "big dreams of"
+    cont "being a famous"
+    cont "swimmer!"
 
-	para "Freezing moves"
-	line "are powerful!"
+	para "Now here I am,"
+	line "standing proud as"
+	cont "a new member of"
+	cont "the ELITE FOUR!"
 
-	para "Your #MON will"
-	line "be at my mercy"
-	cont "when they are"
-	cont "frozen solid!"
+	para "My policy is an"
+	line "all-out offensive"
+	cont "with water-type"
+	cont "#MON!"
 
-	para "Hahaha!"
-	line "Are you ready?"
+	para "Tell me <PLAYER>,"
+	line "have you ever"
+	cont "felt the weight"
+	cont "of a crashing"
+	cont "wave before?"
+
+	para "When it hits, it"
+	line "shakes you to"
+	cont "your very core!"
+
+	para "That's the power"
+	line "you face now!"
+
+	para "Are you ready,"
+	line "sweetie?"
 	done
 
 _LoreleisRoomLoreleiEndBattleText::
-	text "How"
-	line "dare you!"
+	text "Oh my..."
 	prompt
 
 _LoreleisRoomLoreleiAfterBattleText::
-	text "You're better"
-	line "than I thought!"
-	cont "Go on ahead!"
+	text "You handled my"
+	line "waves with real"
+	cont "strength!"
 
-	para "You only got a"
-	line "taste of #MON"
-	cont "LEAGUE power!"
+	para "Maybe you have"
+	line "a chance against"
+	cont "the LEAGUE"
+	cont "after all!"
 	done
 
 _LoreleisRoomLoreleiDontRunAwayText::

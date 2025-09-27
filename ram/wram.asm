@@ -2371,7 +2371,7 @@ wStatusFlags5:: db
 wStatusFlags6:: db
 wStatusFlags7:: db
 wElite4Flags:: db
-	ds 1
+wEliteFourLevelBonus:: db ; additional levels awarded to Elite Four + Champion
 wMovementFlags:: db
 
 wCompletedInGameTradeFlags:: dw

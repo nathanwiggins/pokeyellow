@@ -49,6 +49,7 @@ ReadTrainer:
 	ld a, [hli]
 	cp $FF ; is the trainer special?
 	jr z, .SpecialTrainer ; if so, check for special moves
+	call MaybeBoostEliteFourLevel
 	ld [wCurEnemyLevel], a
 .LoopTrainerData
 	ld a, [hli]
@@ -69,6 +70,7 @@ ReadTrainer:
 	ld a, [hli]
 	and a ; have we reached the end of the trainer data?
 	jr z, .AddAdditionalMoveData
+	call MaybeBoostEliteFourLevel
 	ld [wCurEnemyLevel], a
 	ld a, [hli]
 	ld [wCurPartySpecies], a
@@ -142,4 +144,42 @@ ReadTrainer:
 	inc de
 	dec b
 	jr nz, .LastLoop ; repeat wCurEnemyLevel times
+	ret
+
+
+MaybeBoostEliteFourLevel:
+	push bc
+	ld c, a ; preserve the original level
+	ld a, [wTrainerClass]
+	cp LORELEI
+	jr z, .applyBonus
+	cp BRUNO
+	jr z, .applyBonus
+	cp GIOVANNI
+	jr z, .applyBonus
+	cp LANCE
+	jr z, .applyBonus
+	cp RIVAL3
+	jr nz, .noBonus
+.applyBonus
+	ld a, [wEliteFourLevelBonus]
+	and a
+	jr z, .noBonus
+	cp MAX_ELITE_FOUR_LEVEL_BONUS
+	jr c, .bonusReady
+	ld a, MAX_ELITE_FOUR_LEVEL_BONUS
+.bonusReady
+	ld b, a ; bonus levels to add
+	ld a, c
+	add b
+	jr c, .capAtMaxLevel
+	cp MAX_LEVEL + 1
+	jr c, .done
+.capAtMaxLevel
+	ld a, MAX_LEVEL
+	jr .done
+.noBonus
+	ld a, c
+.done
+	pop bc
 	ret

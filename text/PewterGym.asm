@@ -1,46 +1,47 @@
 _PewterGymBrockPreBattleText::
-	text "I'm BROCK!"
-	line "I'm PEWTER's GYM"
+	text "I am BRUNO,"
+	line "PEWTER's GYM"
 	cont "LEADER!"
 
-	para "I believe in rock"
-	line "hard defense and"
-	cont "determination!"
+	para "Through rigorous"
+	line "training, people"
+	cont "and #MON grow"
+	cont "stronger!"
 
-	para "That's why my"
-	line "#MON are all"
-	cont "the rock-type!"
+	para "I've tempered my"
+	line "partners with"
+	cont "iron discipline!"
 
-	para "Do you still want"
-	line "to challenge me?"
-	cont "Fine then! Show"
-	cont "me your best!"
+	para "<PLAYER>!"
+
+	para "We will grind you"
+	line "down with our"
+	cont "superior power!"
+
+	para "Hoo hah!"
 	done
 
 _PewterGymBrockPostBattleAdviceText::
-	text "There are all"
-	line "kinds of trainers"
-	cont "in the world!"
+	text "Strength comes"
+	line "from discipline!"
 
-	para "Some raise #MON"
-	line "for fights. Some"
-	cont "see them as pets."
+	para "Some trainers"
+	line "sharpen minds."
+	cont "Others toughen"
+	cont "their bodies."
 
-	para "I'm in training to"
-	line "become a #MON"
-	cont "breeder."
+	para "I forge both"
+	line "with training!"
 
-	para "If you take your"
-	line "#MON training"
-	cont "seriously, go"
-	cont "visit the GYM in"
-	cont "CERULEAN and test"
-	cont "your abilities!"
+	para "My job is done!"
+	line "Go face your next"
+	cont "challenge!"
+	cont "Hoo hah!"
 	done
 
 _PewterGymBrockWaitTakeThisText::
-	text "Wait! Take this"
-	line "with you!"
+	text "Hold on! Take"
+	line "this with you!"
 	done
 
 _PewterGymReceivedTM34Text::
@@ -78,11 +79,11 @@ _PewterGymTM34NoRoomText::
 	done
 
 _PewterGymBrockReceivedBoulderBadgeText::
-	text "I took"
-	line "you for granted."
+	text "Your power"
+	line "toppled me!"
 
 	para "As proof of your"
-	line "victory, here's"
+	line "victory, take"
 	cont "the BOULDERBADGE!"
 
 	para "<PLAYER> received"
@@ -111,7 +112,7 @@ _PewterGymCooltrainerMBattleText::
 
 	para "You're still light"
 	line "years from facing"
-	cont "BROCK!"
+	cont "BRUNO!"
 	done
 
 _PewterGymCooltrainerMEndBattleText::
@@ -124,8 +125,8 @@ _PewterGymCooltrainerMEndBattleText::
 
 _PewterGymCooltrainerMAfterBattleText::
 	text "You're pretty hot,"
-	line "but not as hot"
-	cont "as BROCK!"
+	line "but not as strong"
+	cont "as BRUNO!"
 	done
 
 _PewterGymGuidePreAdviceText::
@@ -176,11 +177,11 @@ _PewterGymGuyText::
 	line "get happening!"
 
 	para "It will be tough"
-	line "for your PIKACHU"
+	line "for your #MON"
 	cont "at this GYM!"
 
-	para "Electric attacks"
-	line "are harmless to"
-	cont "BROCK's ground-"
-	cont "type #MON."
+	para "BRUNO's training"
+	line "makes his #MON"
+	cont "hit with crushing"
+	cont "power!"
 	done

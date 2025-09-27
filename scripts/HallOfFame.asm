@@ -43,6 +43,12 @@ HallOfFameResetEventsAndSaveScript:
 	ld [wHallOfFameCurScript], a
 	; Elite 4 events
 	ResetEventRange INDIGO_PLATEAU_EVENTS_START, INDIGO_PLATEAU_EVENTS_END, 1
+	ld a, [wEliteFourLevelBonus]
+	cp MAX_ELITE_FOUR_LEVEL_BONUS ; stop raising levels once the bonus hits the cap
+	jr nc, .skipEliteFourLevelBonusIncrease
+	inc a
+	ld [wEliteFourLevelBonus], a
+.skipEliteFourLevelBonusIncrease
 	xor a
 	ld [wHallOfFameCurScript], a
 	ld a, PALLET_TOWN

@@ -1,41 +1,52 @@
 _AgathaBeforeBattleText::
-	text "I am AGATHA of"
-	line "the ELITE FOUR!"
+    text "So, <PLAYER>,"
+	line "you’re finally"
+	cont "here..."
 
-	para "OAK's taken a lot"
-	line "of interest in"
-	cont "you, child!"
+	para "Earlier than I"
+	line "expected, too."
 
-	para "That old duff was"
-	line "once tough and"
-	cont "handsome! That"
-	cont "was decades ago!"
+	para "Oh, don’t look"
+	line "so surprised."
 
-	para "Now he just wants"
-	line "to fiddle with"
-	cont "his #DEX! He's"
-	cont "wrong! #MON"
-	cont "are for fighting!"
+	para "My talents are"
+	line "well recognized"
+	cont "here in KANTO."
 
-	para "<PLAYER>! I'll show"
-	line "you how a real"
-	cont "trainer fights!"
+	para "I’ve held back"
+	line "on you in the"
+	cont "past, but now..."
+
+	para "This time, you'll"
+	line "regret ever"
+	cont "getting in"
+	cont "my way!"
+
+    para "It's time for"
+    line "TEAM ROCKET to"
+    cont "rise again from"
+	cont "the shadows!"
+
+	para "Fwahahahahaha!"
 	done
 
 _AgathaEndBattleText::
-	text "Woo-hoo!"
-	line "You're something"
-	cont "special, child!"
+    text "..."
+    line "Impossible!"
+    cont "Beaten again...?"
 	prompt
 
 _AgathaAfterBattleText::
-	text "You win! I see"
-	line "what the old duff"
-	cont "sees in you now!"
+	text "So, you win..."
+	line "But remember this,"
+	cont "<PLAYER>!"
 
-	para "I have nothing"
-	line "else to say! Run"
-	cont "along now, child!"
+	para "TEAM ROCKET will"
+	line "never fall!"
+	cont "We bide our time,"
+	cont "and rise again!"
+
+	para "Fwahahahahaha!"
 	done
 
 _AgathasRoomAgathaDontRunAwayText::
