@@ -190,14 +190,18 @@ MACRO script_pokecenter_nurse
 	db TX_SCRIPT_POKECENTER_NURSE
 ENDM
 
-	const TX_SCRIPT_MART ; $fe
+MACRO mart_inventory
+        db _NARG ; number of items
+        IF _NARG
+                db \# ; all item ids
+        ENDC
+        db -1 ; end
+ENDM
+
+        const TX_SCRIPT_MART ; $fe
 MACRO script_mart
-	db TX_SCRIPT_MART
-	db _NARG ; number of items
-	IF _NARG
-		db \# ; all item ids
-	ENDC
-	db -1 ; end
+        db TX_SCRIPT_MART
+        mart_inventory \#
 ENDM
 
 	const TX_SCRIPT_BILLS_PC ; $fd
@@ -210,11 +214,16 @@ MACRO script_players_pc
 	db TX_SCRIPT_PLAYERS_PC
 ENDM
 
-	const_skip ; $fb
+        const TX_SCRIPT_FAR_MART ; $fb
+MACRO script_mart_far
+        db TX_SCRIPT_FAR_MART
+        db BANK(\1)
+        dw \1
+ENDM
 
-	const_skip ; $fa
+        const_skip ; $fa
 
-	const TX_SCRIPT_POKECENTER_PC ; $f9
+        const TX_SCRIPT_POKECENTER_PC ; $f9
 MACRO script_pokecenter_pc
 	db TX_SCRIPT_POKECENTER_PC
 ENDM

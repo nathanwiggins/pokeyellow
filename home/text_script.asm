@@ -74,7 +74,8 @@ MACRO dict2
 .not\@
 ENDM
 
-	dict  TX_SCRIPT_MART,                    DisplayPokemartDialogue
+        dict  TX_SCRIPT_MART,                    DisplayPokemartDialogue
+        dict  TX_SCRIPT_FAR_MART,                DisplayPokemartDialogue
 	dict  TX_SCRIPT_POKECENTER_NURSE,        DisplayPokemonCenterDialogue
 	dict  TX_SCRIPT_PLAYERS_PC,              TextScript_ItemStoragePC
 	dict  TX_SCRIPT_BILLS_PC,                TextScript_BillsPC
@@ -134,36 +135,73 @@ CloseTextDisplay::
 	jp UpdateSprites
 
 DisplayPokemartDialogue::
-	push hl
-	ld hl, PokemartGreetingText
-	call PrintText
-	pop hl
-	inc hl
-	call LoadItemList
-	ld a, PRICEDITEMLISTMENU
-	ld [wListMenuID], a
-	homecall DisplayPokemartDialogue_
-	jp AfterDisplayingTextID
+        ld a, [hli]
+        push af
+        push hl
+        ld hl, PokemartGreetingText
+        call PrintText
+        pop hl
+        pop af
+        cp TX_SCRIPT_FAR_MART
+        jr z, .load_far_mart
+        call LoadItemList
+        jr .got_items
+.load_far_mart
+        call LoadItemListFar
+.got_items
+        ld a, PRICEDITEMLISTMENU
+        ld [wListMenuID], a
+        homecall DisplayPokemartDialogue_
+        jp AfterDisplayingTextID
 
 PokemartGreetingText::
 	text_far _PokemartGreetingText
 	text_end
 
 LoadItemList::
-	ld a, 1
-	ld [wUpdateSpritesEnabled], a
-	ld a, h
-	ld [wItemListPointer], a
-	ld a, l
-	ld [wItemListPointer + 1], a
-	ld de, wItemList
+        ld a, 1
+        ld [wUpdateSpritesEnabled], a
+        ld a, h
+        ld [wItemListPointer], a
+        ld a, l
+        ld [wItemListPointer + 1], a
+        ld de, wItemList
 .loop
-	ld a, [hli]
-	ld [de], a
-	inc de
-	cp $ff
-	jr nz, .loop
-	ret
+        ld a, [hli]
+        ld [de], a
+        inc de
+        cp $ff
+        jr nz, .loop
+        ret
+
+LoadItemListFar::
+        ld a, [hli]
+        ld b, a
+        ld e, [hli]
+        ld d, [hli]
+        ld a, 1
+        ld [wUpdateSpritesEnabled], a
+        ld hl, wItemList
+        ld a, h
+        ld [wItemListPointer], a
+        ld a, l
+        ld [wItemListPointer + 1], a
+        ldh a, [hLoadedROMBank]
+        push af
+        ld a, b
+        call BankswitchCommon
+        ld h, d
+        ld l, e
+        ld de, wItemList
+.copy
+        ld a, [hli]
+        ld [de], a
+        inc de
+        cp $ff
+        jr nz, .copy
+        pop af
+        call BankswitchCommon
+        ret
 
 DisplayPokemonCenterDialogue::
 ; zeroing these doesn't appear to serve any purpose
