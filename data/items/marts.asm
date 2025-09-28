@@ -2,13 +2,13 @@
 ; they are texts
 
 ViridianMartClerkText::
-	script_mart POKE_BALL, POTION, ANTIDOTE, PARLYZ_HEAL, BURN_HEAL
+	script_mart POKE_BALL, ANTIDOTE, PARLYZ_HEAL, BURN_HEAL
 
 PewterMartClerkText::
 	script_mart POKE_BALL, POTION, ESCAPE_ROPE, ANTIDOTE, BURN_HEAL, AWAKENING, PARLYZ_HEAL
 
 CeruleanMartClerkText::
-	script_mart POKE_BALL, POTION, ESCAPE_ROPE, REPEL, ANTIDOTE, BURN_HEAL, AWAKENING, PARLYZ_HEAL
+	script_mart POKE_BALL, POTION, REPEL, ANTIDOTE, BURN_HEAL, AWAKENING, PARLYZ_HEAL
 
 UnusedBikeShopClerkText:: ; unreferenced
 	script_mart BICYCLE
