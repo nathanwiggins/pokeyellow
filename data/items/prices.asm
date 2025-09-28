@@ -1,6 +1,6 @@
 ItemPrices::
 	table_width 3
-	bcd3 2400  ; MASTER_BALL
+	bcd3 0     ; MASTER_BALL
 	bcd3 1200  ; ULTRA_BALL
 	bcd3 600   ; GREAT_BALL
 	bcd3 200   ; POKE_BALL
@@ -9,7 +9,7 @@ ItemPrices::
 	bcd3 0     ; SURFBOARD
 	bcd3 1000  ; SAFARI_BALL
 	bcd3 0     ; POKEDEX
-	bcd3 2100  ; MOON_STONE
+	bcd3 0     ; MOON_STONE
 	bcd3 100   ; ANTIDOTE
 	bcd3 250   ; BURN_HEAL
 	bcd3 250   ; ICE_HEAL
@@ -78,11 +78,11 @@ ItemPrices::
 	bcd3 0     ; OLD_ROD
 	bcd3 0     ; GOOD_ROD
 	bcd3 0     ; SUPER_ROD
-	bcd3 9800  ; PP_UP
-	bcd3 600   ; ETHER
-	bcd3 1200  ; MAX_ETHER
-	bcd3 1500  ; ELIXER
-	bcd3 3000  ; MAX_ELIXER
+	bcd3 0     ; PP_UP
+	bcd3 0     ; ETHER
+	bcd3 0     ; MAX_ETHER
+	bcd3 0     ; ELIXER
+	bcd3 0     ; MAX_ELIXER
 	assert_table_length NUM_ITEMS
 	bcd3 0     ; FLOOR_B2F
 	bcd3 0     ; FLOOR_B1F
