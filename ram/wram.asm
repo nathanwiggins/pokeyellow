@@ -1256,7 +1256,7 @@ wGymCityName:: ds 17
 
 wGymLeaderName:: ds NAME_LENGTH
 
-wItemList:: ds 16
+wItemList:: ds 52
 
 wListPointer:: dw
 
@@ -2286,7 +2286,7 @@ wSeafoamIslandsB3FCurScript:: db
 wRoute23CurScript:: db
 wSeafoamIslandsB4FCurScript:: db
 wRoute18Gate1FCurScript:: db
-	ds 78
+	ds 42
 wGameProgressFlagsEnd::
 
 wRandomWildMonClasses:: ds NUM_RANDOM_CLASSES
