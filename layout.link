@@ -31,7 +31,7 @@ ROM0
 	"High Home"
 	org $100
 	"Header"
-	org $150
+	org $140
 	"Home"
 ROMX $1
 	"bank1"
