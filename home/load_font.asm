@@ -42,7 +42,7 @@ LoadHpBarAndStatusTilePatterns::
 
 GoodCopyVideoData:
 	ldh a, [rLCDC]
-	bit rLCDC_ENABLE, a
+	bit B_LCDC_ENABLE, a
 	jp nz, CopyVideoData ; if LCD is on, transfer during V-blank
 	ld a, b
 	push hl
@@ -57,4 +57,4 @@ GoodCopyVideoData:
 	ld c, l
 	pop hl
 	pop de
-	jp FarCopyData2 ; if LCD is off, transfer all at once
+	jp FarCopyData ; if LCD is off, transfer all at once
