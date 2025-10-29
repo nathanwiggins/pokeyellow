@@ -2293,6 +2293,12 @@ wRandomWildMonClasses:: ds NUM_RANDOM_CLASSES
 
 	ds 21
 
+wEXPBarPixelLength::  ds 1
+wEXPBarBaseEXP::      ds 3
+wEXPBarCurEXP::       ds 3
+wEXPBarNeededEXP::    ds 3
+wEXPBarKeepFullFlag:: ds 1
+
 wObtainedHiddenItemsFlags:: flag_array MAX_HIDDEN_ITEMS
 
 wObtainedHiddenCoinsFlags:: flag_array MAX_HIDDEN_COINS

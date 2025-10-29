@@ -34,8 +34,8 @@ LoadHpBarAndStatusTilePatterns::
 	ld de, HpBarAndStatusGraphics
 	ld hl, vChars2 tile $62
 	lb bc, BANK(HpBarAndStatusGraphics), (HpBarAndStatusGraphicsEnd - HpBarAndStatusGraphics) / $10
- 	call GoodCopyVideoData
- 	ld de, EXPBarGraphics
+	call GoodCopyVideoData
+	ld de, EXPBarGraphics
 	ld hl, vChars1 tile $40
 	lb bc, BANK(EXPBarGraphics), (EXPBarGraphicsEnd - EXPBarGraphics) / $10
 	jp GoodCopyVideoData
@@ -57,4 +57,4 @@ GoodCopyVideoData:
 	ld c, l
 	pop hl
 	pop de
-	jp FarCopyData ; if LCD is off, transfer all at once
+	jp FarCopyData2 ; if LCD is off, transfer all at once
