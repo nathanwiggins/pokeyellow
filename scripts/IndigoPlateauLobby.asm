@@ -41,3 +41,6 @@ IndigoPlateauLobbyChanseyText:
 	text_asm
 	callfar PokecenterChanseyText
 	jp TextScriptEnd
+
+IndigoPlateauLobbyClerkText::
+	script_mart MASTER_BALL, RARE_CANDY, FULL_RESTORE, MAX_POTION, MAX_REVIVE, MAX_REPEL, MAX_ETHER, MAX_ELIXER
