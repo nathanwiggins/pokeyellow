@@ -57,4 +57,4 @@ GoodCopyVideoData:
 	ld c, l
 	pop hl
 	pop de
-	jp FarCopyData2 ; if LCD is off, transfer all at once
+	jp FarCopyData ; if LCD is off, transfer all at once
