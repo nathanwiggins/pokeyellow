@@ -1919,6 +1919,7 @@ DrawPlayerHUDAndHPBar:
 	ld [wCurPartySpecies], a
 	hlcoord 10, 9
 	predef DrawHP
+	callfar PrintEXPBar
 	ld a, $1
 	ldh [hAutoBGTransferEnabled], a
 	ld hl, wPlayerHPBarColor
@@ -1953,6 +1954,26 @@ DrawEnemyHUDAndHPBar:
 	lb bc, 4, 12
 	call ClearScreenArea
 	callfar PlaceEnemyHUDTiles
+	push hl
+   	ld a, [wIsInBattle]
+   	dec a
+   	jr nz, .skipCaughtIndicator
+   	ld a, [wEnemyMonSpecies2]
+   	ld [wPokedexNum], a
+   	callfar IndexToPokedex
+   	ld a, [wPokedexNum]
+   	dec a
+   	ld c, a
+   	ld b, FLAG_TEST
+   	ld hl, wPokedexOwned
+   	predef FlagActionPredef
+   	ld a, c
+   	and a
+   	jr z, .skipCaughtIndicator
+   	hlcoord 1, 1
+   	ld [hl], $72 ; replace this with your Poké Ball icon or other character
+.skipCaughtIndicator
+   	pop hl
 	ld de, wEnemyMonNick
 	hlcoord 1, 0
 	call CenterMonName
