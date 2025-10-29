@@ -1919,6 +1919,7 @@ DrawPlayerHUDAndHPBar:
 	ld [wCurPartySpecies], a
 	hlcoord 10, 9
 	predef DrawHP
+	callfar PrintEXPBar
 	ld a, $1
 	ldh [hAutoBGTransferEnabled], a
 	ld hl, wPlayerHPBarColor
