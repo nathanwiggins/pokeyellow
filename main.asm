@@ -205,6 +205,7 @@ INCLUDE "engine/events/hidden_objects/indigo_plateau_hq.asm"
 SECTION "Battle Engine 7", ROMX
 
 INCLUDE "engine/battle/experience.asm"
+INCLUDE "engine/gfx/exp_bar.asm"
 
 
 SECTION "Diploma", ROMX
@@ -404,7 +405,6 @@ INCLUDE "engine/events/give_pokemon.asm"
 INCLUDE "engine/battle/get_trainer_name.asm"
 INCLUDE "engine/math/random.asm"
 INCLUDE "engine/predefs.asm"
-INCLUDE "engine/gfx/exp_bar.asm"
 
 
 SECTION "Surfing Minigame", ROMX
