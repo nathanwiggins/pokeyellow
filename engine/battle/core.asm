@@ -1955,22 +1955,25 @@ DrawEnemyHUDAndHPBar:
 	call ClearScreenArea
 	callfar PlaceEnemyHUDTiles
 	push hl
-	ld a, [wEnemyMonSpecies2]
-	ld [wPokedexNum], a
-	callfar IndexToPokedex
-	ld a, [wPokedexNum]
-	dec a
-	ld c, a
-	ld b, FLAG_TEST
-	ld hl, wPokedexOwned
-	predef FlagActionPredef
-	ld a, c
-	and a
-	jr z, .notOwned
-	hlcoord 1, 1
-	ld [hl], $72 ; replace this with your Poké Ball icon or other character
-.notOwned
-	pop hl
+   	ld a, [wIsInBattle]
+   	dec a
+   	jr nz, .skipCaughtIndicator
+   	ld a, [wEnemyMonSpecies2]
+   	ld [wPokedexNum], a
+   	callfar IndexToPokedex
+   	ld a, [wPokedexNum]
+   	dec a
+   	ld c, a
+   	ld b, FLAG_TEST
+   	ld hl, wPokedexOwned
+   	predef FlagActionPredef
+   	ld a, c
+   	and a
+   	jr z, .skipCaughtIndicator
+   	hlcoord 1, 1
+   	ld [hl], $72 ; replace this with your Poké Ball icon or other character
+.skipCaughtIndicator
+   	pop hl
 	ld de, wEnemyMonNick
 	hlcoord 1, 0
 	call CenterMonName
