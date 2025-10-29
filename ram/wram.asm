@@ -2510,12 +2510,6 @@ wBoxMonNicksEnd::
 
 wBoxDataEnd::
 
-wEXPBarPixelLength::  ds 1
-wEXPBarBaseEXP::      ds 3
-wEXPBarCurEXP::       ds 3
-wEXPBarNeededEXP::    ds 3
-wEXPBarKeepFullFlag:: ds 1
-
 SECTION "CGB Palette Data", WRAM0
 
 wCGBBasePalPointers:: ds NUM_ACTIVE_PALS * 2
