@@ -467,8 +467,11 @@ WarpFound2::
 	ld [wUnusedLastMapWidth], a
 	ldh a, [hWarpDestinationMap]
 	ld [wCurMap], a
+	cp MT_EMBER_1F
+	jr z, .needsFlash
 	cp ROCK_TUNNEL_1F
 	jr nz, .notRockTunnel
+.needsFlash
 	ld a, $06
 	ld [wMapPalOffset], a
 	call GBFadeOutToBlack
